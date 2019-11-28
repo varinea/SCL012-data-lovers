@@ -1,3 +1,5 @@
+![Poképedia](img_readme/Logo-Pokepedia.png)
+
 # Data Lovers
 
 ## Índice
