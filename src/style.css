@@ -36,3 +36,23 @@
   .dropdown option:hover {background-color: #fff;}
   
   .show {display: block;}
+
+
+/* Imagen de Fondo Verde */
+
+html  {
+  background-image: url("img/Fondo_verde.png");
+  background-size: cover;
+}
+
+
+/* Box blanco */
+#root {
+  background:  whitesmoke;
+      height: 100%;
+      right: 2%; /* borde derecho */
+      left: 2%; /* borde izquierdo */
+      top: 0; /* La Posicionamos arriba */
+      position: fixed; /* Hacemos que tenga una posición fija */
+      
+  }
