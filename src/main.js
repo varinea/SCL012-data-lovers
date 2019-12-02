@@ -1,4 +1,3 @@
-console.log("Hola")
 
 import POKEMON from './data/pokemon/pokemon.js'
 
@@ -10,9 +9,12 @@ console.log(POKEMON.length)
 
 
 //Función de filtrar por tipo
-function filterPokemonByType(pokemons, types) {
-    return POKEMON.filter(pokemon => pokemon.type.includes(types));
-}
+
+let stringOfType = function filterPokemonByType(pokemons, types) {
+  return POKEMON.filter(pokemon => pokemon.type.includes(types));
+};
+
+
 
 //Función de filtrar por nombre
 function filterPokemonByName(pokemons, names) {
@@ -31,42 +33,15 @@ function filterPokemonByName(pokemons, names) {
   //DropList
   let actionFilterByType2 = document.getElementById("filterTypeButton2");
 
+
+
   actionFilterByType2.addEventListener("click", () => {
-      let typeDroplist = document.getElementById("select1").value;
-      document.getElementById("test").innerHTML = filterPokemonByType(POKEMON, typeDroplist).map(pokemon => pokemon.name);
+    let typeDroplist = document.getElementById("select1").value;
+    let stringPokeType = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.name);
+    
+    for (let i = 0, len = stringPokeType.length; i < len; i++) {
+      let card = document.createElement("p");
+      card.innerHTML = stringPokeType[i];
+      document.getElementById("contentOfCards").appendChild(card);
+    };
   });
-
-  //DropList lindo
-  let actionFilterByType3 = document.getElementById("drop");
-
-  actionFilterByType3.addEventListener("click", () => {
-      let typeDropButton = document.getElementById("myDropdown").value;
-      document.getElementById("test").innerHTML = filterPokemonByType(POKEMON, typeDropButton).map(pokemon => pokemon.name);
-  });
-
-  
-
-
-
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-let dropAction = document.getElementById("drop");
-
-dropAction.addEventListener("click", () => {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-);
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  };
