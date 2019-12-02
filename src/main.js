@@ -35,31 +35,6 @@ function filterPokemonByName(pokemons, names) {
 
 
 
-<<<<<<< HEAD
-
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-let dropAction = document.getElementById("drop");
-
-dropAction.addEventListener("click", () => {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-);
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  };
-=======
   actionFilterByType2.addEventListener("click", () => {
     let typeDroplist = document.getElementById("select1").value;
     let stringPokeType = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.name);
@@ -70,4 +45,3 @@ dropAction.addEventListener("click", () => {
       document.getElementById("contentOfCards").appendChild(card);
     };
   });
->>>>>>> 38f5c719b77f194a65bc382cbf72834be8d9b3ae
