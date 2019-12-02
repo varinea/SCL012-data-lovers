@@ -44,9 +44,6 @@ function filterPokemonByName(pokemons, names) {
       document.getElementById("test").innerHTML = filterPokemonByType(POKEMON, typeDropButton).map(pokemon => pokemon.name);
   });
 
-  
-
-
 
   /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */

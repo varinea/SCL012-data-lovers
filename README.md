@@ -1,4 +1,35 @@
-![Poképedia](img_readme/Logo-Pokepedia.png)
+![Poképedia](src/img_readme/Logo-Pokepedia.png)
+
+## Índice
+
+
+## 1. Presentación
+
+Poképedia es una entretenida app dedicada especialmente para jugadores de Pokémon GO. 
+
+Un lugar donde podrás encontrar toda la ayuda necesaria para poder ser el mejor maestro Pokémon, queremos hacer que tu experiencia en Pokémon Go sea más entretenida, aquí nos encargamos de darte tips y pistas para poder descubrir el Pokémon que quieres atrapar, también puedes saber las debilidades de tu contrincante Pokémon y muchas cosas más.
+
+Explora la página y descubre!
+
+
+## Conocimientos previos
+
+Para lograr visualizar la app comenzamos con ver cuales eran nuestro conocimientos previos sobre el proyecto que nos había dado.
+
+Creamos una historia de usuario de la cual nos guiamos para tener un objetivo y proponernos metas.
+
+
+
+
+
+
+## Historia de Usuario 1
+
+Creamos diferentes tipo de usuario
+
+
+
+
 
 # Data Lovers
 
