@@ -17,6 +17,7 @@ html  {
       right: 2%; /* borde derecho */
       left: 2%; /* borde izquierdo */
       top: 0; /* La Posicionamos arriba */
+      position: fixed; /* Hacemos que tenga una posición fija */   
   }
 
 #contentOfCards {
