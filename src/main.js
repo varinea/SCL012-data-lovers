@@ -48,7 +48,7 @@ function filterPokemonByName(pokemons, names) {
     for (let i = 0, len = stringPokeName.length; i < len; i++) {
       let card = document.createElement("p");
       card.classList.add('card-style');
-      card.innerHTML = "<img src=\"" + stringPokeImg[i] + "\"> <br>" + stringPokeName[i] + "<br> TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i];
+      card.innerHTML = "<img src=\"" + stringPokeImg[i] + "\"> <br>" + stringPokeName[i] + "<br><br> TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i];
       document.getElementById("contentOfCards").appendChild(card);
     };
   });
