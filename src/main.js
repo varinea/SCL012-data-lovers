@@ -14,12 +14,10 @@ let stringOfType = function filterPokemonByType(pokemons, types) {
   return POKEMON.filter(pokemon => pokemon.type.includes(types));
 };
 
-
-
 //Función de filtrar por nombre
 function filterPokemonByName(pokemons, names) {
     return POKEMON.filter(pokemon => pokemon.name.includes(names));
-}
+};
 
 
 //Input
@@ -31,17 +29,26 @@ function filterPokemonByName(pokemons, names) {
 });
 
   //DropList
-  let actionFilterByType2 = document.getElementById("filterTypeButton2");
+  let actionFilterByType = document.getElementById("filterTypeButton2");
 
 
 
-  actionFilterByType2.addEventListener("click", () => {
+  actionFilterByType.addEventListener("click", () => {
     let typeDroplist = document.getElementById("select1").value;
-    let stringPokeType = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.name);
-    
-    for (let i = 0, len = stringPokeType.length; i < len; i++) {
+    let stringPokeName = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.name);
+    let stringPokeType = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.type);
+    let stringPokeHeight = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.height);
+    let stringPokeWeight = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.weight);
+    let stringPokeImg = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.img);
+    console.log(stringPokeName)
+    const divCard = document.getElementById("contentOfCards");
+    while (divCard.hasChildNodes()) {
+      divCard.removeChild(divCard.firstChild);
+    };
+    for (let i = 0, len = stringPokeName.length; i < len; i++) {
       let card = document.createElement("p");
-      card.innerHTML = stringPokeType[i];
+      card.classList.add('card-style');
+      card.innerHTML = "<img src=\"" + stringPokeImg[i] + "\"> <br>" + stringPokeName[i] + "<br> TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i];
       document.getElementById("contentOfCards").appendChild(card);
     };
   });
