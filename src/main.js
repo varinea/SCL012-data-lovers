@@ -20,7 +20,7 @@ function filterPokemonByName(pokemons, names) {
 };
 
 
-//Input
+//Función del Input y su botón
   let actionFilterByName = document.getElementById("filterTypeButton");
 
   actionFilterByName.addEventListener("click", () => {
@@ -40,7 +40,14 @@ function filterPokemonByName(pokemons, names) {
     let stringPokeHeight = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.height);
     let stringPokeWeight = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.weight);
     let stringPokeImg = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.img);
-    console.log(stringPokeName)
+    let stringPokeCandy = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.candy);
+    let stringPokeCandyCount = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.candy_count);
+    let stringPokeEgg = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.egg);
+    let stringPokeSpawnTime = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.spawn_time);
+    let stringPokeWeaknesses = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.weaknesses);
+    let objectPokePrevEvolution = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.prev_evolution);
+    let stringPokeNextEvolution = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.next_evolution);
+    console.log(objectPokePrevEvolution)
     const divCard = document.getElementById("contentOfCards");
     while (divCard.hasChildNodes()) {
       divCard.removeChild(divCard.firstChild);
@@ -50,14 +57,8 @@ function filterPokemonByName(pokemons, names) {
     for (let i = 0, len = stringPokeName.length; i < len; i++) {
       let card = document.createElement("div");
       card.classList.add("card-style");
-      card.innerHTML = "<img src=\"" + stringPokeImg[i] + "\"> <br>" + stringPokeName[i] + "<br><br> TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i];
+      card.innerHTML = "<img src=\"" + stringPokeImg[i] + "\"> <br> <h3>" + stringPokeName[i] + "</h3>TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i] + "<br><br><p class=\"see-more\">Ver más</p>";
       document.getElementById("contentOfCards").appendChild(card);
-
-      // Span de "Ver más"
-      let modalCaller = document.createElement("span");
-      modalCaller.classList.add("modal-caller");
-      modalCaller.innerHTML = "Ver más";
-      document.getElementById("contentOfCards").appendChild(modalCaller);
 
       // Creación del div del Modal
       let modal = document.createElement("div");
@@ -67,18 +68,17 @@ function filterPokemonByName(pokemons, names) {
       // Creación del contenido del Modal, dentro del div Modal
       let modalContent = document.createElement("div");
       modalContent.classList.add("modal-content");
-      modalContent.innerHTML = "<img src=\"" + stringPokeImg[i] + "\"> <br>" + stringPokeName[i] + "<br><br> TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i];
+      modalContent.innerHTML = "<div class=\"pokemon-description\"><img src=\"" + stringPokeImg[i] + "\"><br><h3>" + stringPokeName[i] + "</h3>TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i] + "<br>CANDY: " + stringPokeCandy[i] + "<br>Nº DE CANDIES PARA EVOLUCIONAR: " + stringPokeCandyCount[i] + "<br>HUEVO: " + stringPokeEgg[i] + "<br>HORA DE SPAWNS: " + stringPokeSpawnTime[i] + "<br>DEBILIDADES: " + stringPokeWeaknesses[i] + "<br>EVOLUCIÓN ANTERIOR: " + objectPokePrevEvolution[i] + "<br>PRÓXIMA EVOLUCIÓN: " + stringPokeNextEvolution[i] + "</div>";
       modal.appendChild(modalContent);
 
       // Span del X del modal
       let close = document.createElement("span");
       close.classList.add("close");
       close.innerHTML = "&times;";
-      modalContent.appendChild(close); 
-
+      modalContent.insertBefore(close, modalContent.childNodes[0]);
       
       // Función para abrir el modal
-      modalCaller.addEventListener("click", () => {
+      card.addEventListener("click", () => {
       modal.style.display = "block";
       });
 
@@ -89,10 +89,11 @@ function filterPokemonByName(pokemons, names) {
 
       //Esto todavía no sirve
       // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
+  /*    modal.addEventListener("click", () => {
+        modal.style.display = "none";
+      }); */
+
+
+
       }; 
-    };
-  });
+    });
