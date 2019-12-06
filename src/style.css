@@ -24,13 +24,13 @@ html  {
   justify-items: center;
 }
 
+/* Estilo de cada carta de Pokémon */
 .card-style {
   display: inline-block;
   background-color: #ebebeb;
-  height: 16em;
-  width: 10em;
+  width: 12em;
   margin: 20px 15px 20px 15px;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 20px 15px 20px;
   justify-items: center;
   text-align: center;
   border-radius: 20px;
@@ -39,10 +39,12 @@ html  {
   box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
 }
 
-.modal-caller {
-  color: rgb(18, 175, 18);
+/* Ver más en las cartas */
+.see-more {
+  color: #4ab483
 }
 
+/* Modal de cada Pokémon individual */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -62,11 +64,22 @@ html  {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
+  width: 20%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
   border: 1px solid #888;
-  width: 30%;
+  color: #414141;
 }
 
-/* The Close Button */
+/*Texto de las descripciones en el modal */
+.pokemon-description {
+  text-align: center;
+  border-radius: 20px;
+  font-family: "Ramabhadra", Helvetica;
+  
+}
+
+/* X de cerrar el modal*/
 .close {
   color: #aaaaaa;
   float: right;
@@ -80,3 +93,4 @@ html  {
   text-decoration: none;
   cursor: pointer;
 }
+
