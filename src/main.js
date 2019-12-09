@@ -26,11 +26,12 @@ function filterPokemonByName(pokemons, names) {
 });
 
   //DropList
-  let actionFilterByType = document.getElementById("filterTypeButton2");
+
+  const selectFilterByType = document.getElementById("select1")
 
 
-// Botón para filtrar
-  actionFilterByType.addEventListener("click", () => {
+  // Botón para filtrar
+  selectFilterByType.addEventListener("change", () => {
 
     let typeDroplist = document.getElementById("select1").value; // Valor del droplist de tipo
 
