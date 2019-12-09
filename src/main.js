@@ -3,10 +3,7 @@ import POKEMON from './data/pokemon/pokemon.js'
 
 console.log(POKEMON[0].name)
 
-console.log(POKEMON[0].type)
-
-console.log(POKEMON.length)
-
+console.log(POKEMON[1].prev_evolution[0].name)
 
 //Función de filtrar por tipo
 
@@ -34,7 +31,10 @@ function filterPokemonByName(pokemons, names) {
 
 // Botón para filtrar
   actionFilterByType.addEventListener("click", () => {
-    let typeDroplist = document.getElementById("select1").value;
+
+    let typeDroplist = document.getElementById("select1").value; // Valor del droplist de tipo
+
+    // Todas las variables que aparecen en las tarjetas de cada Pokemón
     let stringPokeName = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.name);
     let stringPokeType = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.type);
     let stringPokeHeight = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.height);
@@ -45,9 +45,11 @@ function filterPokemonByName(pokemons, names) {
     let stringPokeEgg = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.egg);
     let stringPokeSpawnTime = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.spawn_time);
     let stringPokeWeaknesses = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.weaknesses);
-    let objectPokePrevEvolution = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.prev_evolution);
-    let stringPokeNextEvolution = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.next_evolution);
-    console.log(objectPokePrevEvolution)
+    let objectPokePrevEvolution = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.prev_evolution); //Mapeo de Pre Evolución
+    let stringPokeNextEvolution = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.next_evolution); //Mapeo de Prox Evolución
+    console.log(objectPokePrevEvolution[2][1].name)
+
+
     const divCard = document.getElementById("contentOfCards");
     while (divCard.hasChildNodes()) {
       divCard.removeChild(divCard.firstChild);
@@ -57,18 +59,37 @@ function filterPokemonByName(pokemons, names) {
     for (let i = 0, len = stringPokeName.length; i < len; i++) {
       let card = document.createElement("div");
       card.classList.add("card-style");
-      card.innerHTML = "<img src=\"" + stringPokeImg[i] + "\"> <br> <h3>" + stringPokeName[i] + "</h3>TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i] + "<br><br><p class=\"see-more\">Ver más</p>";
+      card.innerHTML = "<img src=\"" + stringPokeImg[i] + 
+                        "\"><br><h3>" + stringPokeName[i] + 
+                        "</h3>TIPO: " + stringPokeType[i] +
+                        "<br> ALTURA: " + stringPokeHeight[i] + 
+                        "<br> PESO: " + stringPokeWeight[i] + 
+                        "<br><br><p class=\"see-more\">Ver más</p>";
       document.getElementById("contentOfCards").appendChild(card);
+
 
       // Creación del div del Modal
       let modal = document.createElement("div");
       modal.classList.add("modal");
       document.getElementById("contentOfCards").appendChild(modal);
+      
 
       // Creación del contenido del Modal, dentro del div Modal
       let modalContent = document.createElement("div");
       modalContent.classList.add("modal-content");
-      modalContent.innerHTML = "<div class=\"pokemon-description\"><img src=\"" + stringPokeImg[i] + "\"><br><h3>" + stringPokeName[i] + "</h3>TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i] + "<br>CANDY: " + stringPokeCandy[i] + "<br>Nº DE CANDIES PARA EVOLUCIONAR: " + stringPokeCandyCount[i] + "<br>HUEVO: " + stringPokeEgg[i] + "<br>HORA DE SPAWNS: " + stringPokeSpawnTime[i] + "<br>DEBILIDADES: " + stringPokeWeaknesses[i] + "<br>EVOLUCIÓN ANTERIOR: " + objectPokePrevEvolution[i] + "<br>PRÓXIMA EVOLUCIÓN: " + stringPokeNextEvolution[i] + "</div>";
+      modalContent.innerHTML ="<div class=\"pokemon-description\"><img src=\"" + stringPokeImg[i] + 
+                              "\"><br><h3>" + stringPokeName[i] + 
+                              "</h3>TIPO: " + stringPokeType[i] + 
+                              "<br> ALTURA: " + stringPokeHeight[i] + 
+                              "<br> PESO: " + stringPokeWeight[i] + 
+                              "<br>CANDY: " + stringPokeCandy[i] + 
+                              "<br>Nº DE CANDIES PARA EVOLUCIONAR: " + stringPokeCandyCount[i] + 
+                              "<br>HUEVO: " + stringPokeEgg[i] + 
+                              "<br>HORA DE SPAWNS: " + stringPokeSpawnTime[i] + 
+                              "<br>DEBILIDADES: " + stringPokeWeaknesses[i] + 
+                              "<br>EVOLUCIÓN ANTERIOR: " + objectPokePrevEvolution[i] + 
+                              "<br>PRÓXIMA EVOLUCIÓN: " + stringPokeNextEvolution[i] + 
+                              "</div>";
       modal.appendChild(modalContent);
 
       // Span del X del modal
