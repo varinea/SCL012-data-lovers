@@ -68,7 +68,7 @@ function filterPokemonByName(pokemons, names) {
       // Creación del contenido del Modal, dentro del div Modal
       let modalContent = document.createElement("div");
       modalContent.classList.add("modal-content");
-      modalContent.innerHTML = "<div class=\"pokemon-description\"><img src=\"" + stringPokeImg[i] + "\"><br><h3>" + stringPokeName[i] + "</h3>TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i] + "<br>CANDY: " + stringPokeCandy[i] + "<br>Nº DE CANDIES PARA EVOLUCIONAR: " + stringPokeCandyCount[i] + "<br>HUEVO: " + stringPokeEgg[i] + "<br>HORA DE SPAWNS: " + stringPokeSpawnTime[i] + "<br>DEBILIDADES: " + stringPokeWeaknesses[i] + "<br>EVOLUCIÓN ANTERIOR: " + objectPokePrevEvolution[i] + "<br>PRÓXIMA EVOLUCIÓN: " + stringPokeNextEvolution[i] + "</div>";
+      modalContent.innerHTML = "<div class=\"pokemon-description\"><img class=\"pokemon-img\" src=\"" + stringPokeImg[i] + "\"><br><h3>" + stringPokeName[i] + "</h3>TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i] + "<br>CANDY: " + stringPokeCandy[i] + "<br>Nº DE CANDIES PARA EVOLUCIONAR: " + stringPokeCandyCount[i] + "<br>HUEVO: " + stringPokeEgg[i] + "<br>HORA DE SPAWNS: " + stringPokeSpawnTime[i] + "<br>DEBILIDADES: " + stringPokeWeaknesses[i] + "<br>EVOLUCIÓN ANTERIOR: " + objectPokePrevEvolution[i] + "<br>PRÓXIMA EVOLUCIÓN: " + stringPokeNextEvolution[i] + "</div>";
       modal.appendChild(modalContent);
 
       // Span del X del modal
