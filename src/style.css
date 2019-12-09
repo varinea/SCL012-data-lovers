@@ -1,27 +1,23 @@
 
 /* Imagen de Fondo Verde */
-body {
+body, h1 , h2 , h3 , p , br  {
   margin: 0px;
+  font-family: "Source Sans Pro", sans-serif;  
+  color: #8b8a8a;
+  text-align: left;
 }
-
-html  {
-  background-image: url("img/Fondo_verde.png");
-/*  background-size: cover; */
-}
-
 
 /* Box blanco */
 #root {
-  background:  whitesmoke;
-      height: 100%; 
-      right: 2%; /* borde derecho */
-      left: 2%; /* borde izquierdo */
-      top: 0; /* La Posicionamos arriba */
+ 
+      text-align: center; 
+      font-family: "Source Sans Pro", sans-serif;
   }
 
 #contentOfCards {
   border: 1px solid black;
   justify-items: center;
+  border: none;
 }
 
 /* Estilo de cada carta de Pokémon */
@@ -33,10 +29,11 @@ html  {
   padding: 15px 20px 15px 20px;
   justify-items: center;
   text-align: center;
-  border-radius: 20px;
-  font-family: "Ramabhadra", Helvetica;
+  border-radius: 20px, ;
+  font-family: "Source Sans Pro", sans-serif;
   color: #414141;
   box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
+  
 }
 
 /* Ver más en las cartas */
@@ -65,18 +62,22 @@ html  {
   margin: auto;
   padding: 20px;
   width: 20%;
-  border-radius: 20px;
+  border-radius: 20px; 
   box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
   border: 1px solid #888;
   color: #414141;
+  border: none;
 }
 
 /*Texto de las descripciones en el modal */
+.pokemon-img {
+  align-content: center;
+}
+
 .pokemon-description {
-  text-align: center;
+  text-align: left;
   border-radius: 20px;
-  font-family: "Ramabhadra", Helvetica;
-  
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /* X de cerrar el modal*/
@@ -94,3 +95,66 @@ html  {
   cursor: pointer;
 }
 
+.selectArea #select1 {
+    
+  background: linear-gradient(284.34deg, #25CDAA 3.72%, rgba(255, 255, 255, 0) 108.48%), #A2D694;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 10%;
+  border: none;
+  margin: 15px;
+}
+
+footer {
+  background: #f0f0f0;
+  padding: 4em 0 6em 0;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#footer .copyright {
+  color: #999;
+  font-size: 0.9em;
+  line-height: 1em;
+  margin: 2em 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+  #footer .copyright a {
+    color: inherit;
+  }
+
+  #footer .copyright li {
+    display: inline-block;
+    list-style: none;
+    width: 400px;
+    text-align: justify;
+  }
+
+  #footer .icons a {
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.35;
+  }
+
+    #footer .icons a:hover {
+      opacity: 0.75;
+    }
+
+
+  #banner {
+      background-attachment: scroll,							fixed;
+      background-color: #666;
+      background-image: url("img/overlay.png"), url("img/hero-japan.jpg");
+      background-position: top left,						center center;
+      background-repeat: repeat,							no-repeat;
+      background-size: auto,							cover;
+      padding: 9em 0 10em 0;
+  }

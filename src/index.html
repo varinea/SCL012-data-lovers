@@ -1,49 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Pruebas</h1>
-      <input type="text" id="typePoke" placeholder="Nombre de un Pokémon"></input>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PokePediaGo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/7ab99cc4ec.js" crossorigin="anonymous"></script>
+  <!--iconos footer -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="root">
+
+    <!--header -->
+    <!-- Banner // Logo -->
+    <section id="banner">
+      <a title="Home" href="index.html"><img class="pokelogo" src="img/logo.png" alt="Logo Pokepedia"></a>
+    </section>
+
+    <!--buscador -->
+
+    <div class="searchPoke">
+      <input type="text" id="typePoke" placeholder="Nombre de tu Pokémon"></input>
       <button id="filterTypeButton">filtrar</button>
-      
-      <select id="select1"> 
-          <option value="">Tipo</option> 
-          <option value="Water">Agua</option> 
-          <option value="Fire">Fuego</option> 
-          <option value="Normal">Normal</option>
-          <option value="Grass">Planta</option> 
-          <option value="Electric">Eléctrico</option>
-          <option value="Ice">Hielo</option>
-          <option value="Fighting">Pelea</option> 
-          <option value="Poison">Veneno</option>
-          <option value="Ground">Tierra</option> 
-          <option value="Flying">Volador</option> 
-          <option value="Psychic">Psíquicos</option>
-          <option value="Bug">Bicho</option>
-          <option value="Rock">Roca</option>  
-          <option value="Ghost">Fantasma</option> 
-          <option value="Dragon">Dragón</option> 
-          <option value="Dark">Siniéstro</option>
-          <option value="Steel">Metal</option> 
-          <option value="Fairy">Hada</option>       
-      </select> 
-      <button id="filterTypeButton2">filtrar</button>
-      <section id="contentOfCards">
-        <h3>Carta</h3>
-      </section>
-      <p id="test"></p>
-
-      
     </div>
-    <script type="module" src="main.js"></script>
-  </body>
+
+    <!--buscador por tipo -->
+
+    <div class="selectArea">
+      <p> Filtrar Pokémon por: </p>
+      <select id="select1" class="pokeTipo">
+        <option value="">Tipo</option>
+        <option value="Water">Agua</option>
+        <option value="Fire">Fuego</option>
+        <option value="Normal">Normal</option>
+        <option value="Grass">Planta</option>
+        <option value="Electric">Eléctrico</option>
+        <option value="Ice">Hielo</option>
+        <option value="Fighting">Pelea</option>
+        <option value="Poison">Veneno</option>
+        <option value="Ground">Tierra</option>
+        <option value="Flying">Volador</option>
+        <option value="Psychic">Psíquicos</option>
+        <option value="Bug">Bicho</option>
+        <option value="Rock">Roca</option>
+        <option value="Ghost">Fantasma</option>
+        <option value="Dragon">Dragón</option>
+        <option value="Dark">Siniéstro</option>
+        <option value="Steel">Metal</option>
+        <option value="Fairy">Hada</option>
+      </select>
+    </div>
+    
+    <!--boton filtrar -->
+    <button id="filterTypeButton2">filtrar</button>
+
+    <div id="contentOfCards"></div>
+
+    <!--img Cahrizar --> 
+    <div class="charizard">  
+    <img src="img/charizard.png">
+    </div>
+
+    <!--Texto Body -->
+
+    <div id="boxText">
+        <h1>Poképedia GO</h1>
+				<p class="boxSpecial"> 
+            Es una entretenida app dedicada especialmente para jugadores experimentados de Pokémon GO.
+            <h2>¿De que trata?</h2>
+              Aqui puedes encontrar todo lo necesario para hacer mas agradable tu aventura en Pokémon Go, <br> 
+              puedes buscar desde la debilidad del pokémon de tu contrincante hasta los datos de tu pokémon favorito.
+				</p>
+        <h2>Simplemente explora y encuentra!</h2>
+    </div>
+
+    <footer id="footer">
+      <ul class="icons">
+        <i class="fab fa-instagram"><a href=" https://www.instagram.com/pokemongoapp/"></a></i>
+        <i class="fab fa-twitter"><a href="https://twitter.com/PokemonGoApp"></a></i>
+        <i class="fab fa-facebook-square"> <a href="https://www.facebook.com/PokemonGO/"></a></i>
+      </ul>
+      <ul class="copyright">
+        <li>
+          <p> Pokemon Go. All rights reserved. Pokémon y los nombres de los personajes son marcas registradas de
+            Nintendo. Durante el juego, ten en cuenta tu entorno y juega con seguridad.</p>
+          <p>Pokemon Go. All rights reserved. Barbara Di Nizca & Varinea López</p>
+        </li>
+      </ul>
+    </footer>
+
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>
-
-

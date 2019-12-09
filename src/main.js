@@ -77,6 +77,7 @@ function filterPokemonByName(pokemons, names) {
       // Creación del contenido del Modal, dentro del div Modal
       let modalContent = document.createElement("div");
       modalContent.classList.add("modal-content");
+<<<<<<< HEAD
       modalContent.innerHTML ="<div class=\"pokemon-description\"><img src=\"" + stringPokeImg[i] + 
                               "\"><br><h3>" + stringPokeName[i] + 
                               "</h3>TIPO: " + stringPokeType[i] + 
@@ -90,6 +91,9 @@ function filterPokemonByName(pokemons, names) {
                               "<br>EVOLUCIÓN ANTERIOR: " + objectPokePrevEvolution[i] + 
                               "<br>PRÓXIMA EVOLUCIÓN: " + stringPokeNextEvolution[i] + 
                               "</div>";
+=======
+      modalContent.innerHTML = "<div class=\"pokemon-description\"><img class=\"pokemon-img\" src=\"" + stringPokeImg[i] + "\"><br><h3>" + stringPokeName[i] + "</h3>TIPO: " + stringPokeType[i] + "<br> ALTURA: " + stringPokeHeight[i] + "<br> PESO: " + stringPokeWeight[i] + "<br>CANDY: " + stringPokeCandy[i] + "<br>Nº DE CANDIES PARA EVOLUCIONAR: " + stringPokeCandyCount[i] + "<br>HUEVO: " + stringPokeEgg[i] + "<br>HORA DE SPAWNS: " + stringPokeSpawnTime[i] + "<br>DEBILIDADES: " + stringPokeWeaknesses[i] + "<br>EVOLUCIÓN ANTERIOR: " + objectPokePrevEvolution[i] + "<br>PRÓXIMA EVOLUCIÓN: " + stringPokeNextEvolution[i] + "</div>";
+>>>>>>> 807bab73f1416ed1f2a3a1b4b2232a60c8374a24
       modal.appendChild(modalContent);
 
       // Span del X del modal
