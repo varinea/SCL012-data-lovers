@@ -62,8 +62,8 @@ function filterPokemonByName(pokemons, names) {
       card.innerHTML = "<img src=\"" + stringPokeImg[i] + 
                         "\"><br><h3>" + stringPokeName[i] + 
                         "</h3>TIPO: " + stringPokeType[i] +
-                        "<br> ALTURA: " + stringPokeHeight[i] + 
-                        "<br> PESO: " + stringPokeWeight[i] + 
+                        "<br> <p>ALTURA:</p> " + stringPokeHeight[i] + 
+                        "<br> <p>PESO:</p> " + stringPokeWeight[i] + 
                         "<br><br><p class=\"see-more\">Ver más</p>";
       document.getElementById("contentOfCards").appendChild(card);
 

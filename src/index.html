@@ -6,30 +6,27 @@
   <title>PokePediaGo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/7ab99cc4ec.js" crossorigin="anonymous"></script>
-  <!--iconos footer -->
+  <script src="https://kit.fontawesome.com/7ab99cc4ec.js" class="icon" crossorigin="anonymous"></script>
+  <!--iconos/css -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="img/pokeball.jpg">
 </head>
 
 <body>
   <div id="root">
-
-    <!--header -->
-    <!-- Banner // Logo -->
-    <section id="banner">
-      <a title="Home" href="index.html"><img class="pokelogo" src="img/logo.png" alt="Logo Pokepedia"></a>
-    </section>
+    
+    <!--header // Banner // Logo-->
+         <section id="banner">
+               <a title="Home" href="index.html"><img class="pokelogo" src="img/logo.png" alt="Logo Pokepedia"></a>
+         </section>
 
     <!--buscador -->
-
     <div class="searchPoke">
-      <input type="text" id="typePoke" placeholder="Nombre de tu Pokémon"></input>
-      <button id="filterTypeButton">filtrar</button>
+         <input type="text" id="typePoke" placeholder="Nombre de tu Pokémon"></input>
+         <button id="filterTypeButton">filtrar</button>
     </div>
 
     <!--buscador por tipo -->
-
     <div class="selectArea">
       <p> Filtrar Pokémon por: </p>
       <select id="select1" class="pokeTipo">
@@ -54,46 +51,43 @@
         <option value="Fairy">Hada</option>
       </select>
     </div>
-    
+
     <!--boton filtrar -->
     <button id="filterTypeButton2">filtrar</button>
 
-    <div id="contentOfCards"></div>
-
-    <!--img Cahrizar --> 
-    <div class="charizard">  
-    <img src="img/charizard.png">
+    <div id="contentOfCards">
+         <!--img Cahrizar -->
+      <div class="charizard">
+            <img src="img/charizard.png">
+      </div>
+        <!--Texto Body -->
+       <div id="boxText">
+          <h1>Poképedia GO</h1>
+          <p class="boxSpecial">
+           Es una entretenida app dedicada especialmente para jugadores experimentados de Pokémon GO. </p>
+          <h2>¿De que trata?</h2>
+          <p> Aqui puedes encontrar todo lo necesario para hacer mas agradable tu aventura en Pokémon Go,
+           puedes buscar desde la debilidad del pokémon de tu contrincante hasta los datos de tu pokémon favorito. </p>
+          <h2>Simplemente explora y encuentra!</h2>
+          </div>
     </div>
-
-    <!--Texto Body -->
-
-    <div id="boxText">
-        <h1>Poképedia GO</h1>
-				<p class="boxSpecial"> 
-            Es una entretenida app dedicada especialmente para jugadores experimentados de Pokémon GO.
-            <h2>¿De que trata?</h2>
-              Aqui puedes encontrar todo lo necesario para hacer mas agradable tu aventura en Pokémon Go, <br> 
-              puedes buscar desde la debilidad del pokémon de tu contrincante hasta los datos de tu pokémon favorito.
-				</p>
-        <h2>Simplemente explora y encuentra!</h2>
-    </div>
-
-    <footer id="footer">
-      <ul class="icons">
-        <i class="fab fa-instagram"><a href=" https://www.instagram.com/pokemongoapp/"></a></i>
-        <i class="fab fa-twitter"><a href="https://twitter.com/PokemonGoApp"></a></i>
-        <i class="fab fa-facebook-square"> <a href="https://www.facebook.com/PokemonGO/"></a></i>
-      </ul>
-      <ul class="copyright">
-        <li>
-          <p> Pokemon Go. All rights reserved. Pokémon y los nombres de los personajes son marcas registradas de
-            Nintendo. Durante el juego, ten en cuenta tu entorno y juega con seguridad.</p>
-          <p>Pokemon Go. All rights reserved. Barbara Di Nizca & Varinea López</p>
-        </li>
-      </ul>
-    </footer>
-
   </div>
+
+  <footer id="footer">
+    <div style="font-size: 35px;">
+        <i class="fab fa-instagram"><span class="font-size"></span><a href=" https://www.instagram.com/pokemongoapp/"></a></i>
+        <i class="fab fa-twitter"><span class="font-size"></span><a href="https://twitter.com/PokemonGoApp"></a></i>
+        <i class="fab fa-facebook-square"><span class="font-size"></span> <a href="https://www.facebook.com/PokemonGO/"></a></i>
+    </div>
+    
+    <img src="img/pikachu.png" class="pikachu">
+
+      <span class="copyright">
+          <p class="footerText1"> Pokémon y los nombres de los personajes son marcas registradas de Nintendo. Durante el juego, ten en cuenta tu entorno y juega con seguridad.</p>
+          <p class="footerText2">Pokemon Go. All rights reserved. Barbara Di Nizca & Varinea López</p>
+      </span>
+  </footer>
+
   <script type="module" src="main.js"></script>
 </body>
 
