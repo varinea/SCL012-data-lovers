@@ -8,22 +8,37 @@
   padding: 9em 0 10em 0;
 }
 
-/* Imagen de Fondo Verde */
-body, h1 , h2 , h3 , p , br  {
+body {
   margin: 0px;
-  font-family: "Source Sans Pro", sans-serif;  
+  font-family: 'Raleway', sans-serif;
   color: #8b8a8a;
-  text-align: left;
 }
 
 /* Box blanco */
 #root {
-      text-align: center; 
-      font-family: "Source Sans Pro", sans-serif;
-  }
+  background-color: darkkhaki;
+  width: 90% ;
+  margin:auto;
+
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: flex;
+  
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
+}
+
+.charizard {
+  margin: 0;
+  width: 500px;
+  height: 500px;
+}
+
+
 
   .datalover {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: left; 
   }
 
@@ -45,8 +60,7 @@ body, h1 , h2 , h3 , p , br  {
   border-radius: 20px, ;
   font-family: "Source Sans Pro", sans-serif;
   color: #414141;
-  box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
-  
+  box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19); 
 }
 
 /* Ver más en las cartas */

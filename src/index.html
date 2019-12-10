@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <title>PokePediaGo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/7ab99cc4ec.js" class="icon" crossorigin="anonymous"></script>
-  <!--iconos/css -->
-  <link rel="stylesheet" href="style.css" />
+    <!--Fuentes / iconos/ css -->
+    <script src="https://kit.fontawesome.com/7ab99cc4ec.js" class="icon" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="img/pokeball.jpg">
 </head>
 
 <body>
-  <div id="root">
-    
-    <!--header // Banner // Logo-->
-         <section id="banner">
-               <a title="Home" href="index.html"><img class="pokelogo" src="img/logo.png" alt="Logo Pokepedia"></a>
-         </section>
+   <!--header // Banner // Logo-->
+    <section id="banner">
+      <a title="Home" href="index.html"><img class="pokelogo" src="img/logo.png" alt="Logo Pokepedia"></a>
+    </section>
 
+  <div id="root">
     <!--buscador -->
     <div class="searchPoke">
          <input type="text" id="typePoke" placeholder="Nombre de tu Pokémon"></input>
          <button id="filterTypeButton">filtrar</button>
     </div>
 
-    
     <div class="selectArea">
       <p> Filtrar Pokémon por: </p>
 
@@ -82,7 +79,7 @@
             <img src="img/charizard.png">
       </div>
         <!--Texto Body -->
-        <div id="boxText">
+        <div id="boxText" class="boxText">
           <h1>Poképedia GO</h1>
           <p class="boxSpecial">
            Es una entretenida app dedicada especialmente para jugadores experimentados de Pokémon GO. </p>
@@ -91,6 +88,9 @@
            puedes buscar desde la debilidad del pokémon de tu contrincante hasta los datos de tu pokémon favorito. </p>
           <h2>Simplemente explora y encuentra!</h2>
         </div>
+        </section>
+    </div> 
+  </div>
 
   <footer id="footer">
     <div style="font-size: 35px;">
