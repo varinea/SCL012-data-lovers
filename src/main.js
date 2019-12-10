@@ -6,10 +6,10 @@ console.log(POKEMON[0].name)
 console.log(POKEMON[1].prev_evolution[0].name)
 
 //Función de filtrar por tipo
-
 let stringOfType = function filterPokemonByType(pokemons, types) {
   return POKEMON.filter(pokemon => pokemon.type.includes(types));
 };
+
 
 //Función de filtrar por nombre
 function filterPokemonByName(pokemons, names) {
@@ -26,16 +26,15 @@ function filterPokemonByName(pokemons, names) {
 });
 
   //DropList
-
-  const selectFilterByType = document.getElementById("select1")
+  const selectFilterByType = document.getElementById("selectType")
 
 
   // Botón para filtrar
   selectFilterByType.addEventListener("change", () => {
 
-    let typeDroplist = document.getElementById("select1").value; // Valor del droplist de tipo
+    let typeDroplist = document.getElementById("selectType").value; // Valor del droplist de tipo
 
-    // Todas las variables que aparecen en las tarjetas de cada Pokemón
+  // Todas las variables que aparecen en las tarjetas de cada Pokemón
     let stringPokeName = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.name);
     let stringPokeType = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.type);
     let stringPokeHeight = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.height);
@@ -48,7 +47,6 @@ function filterPokemonByName(pokemons, names) {
     let stringPokeWeaknesses = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.weaknesses);
     let objectPokePrevEvolution = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.prev_evolution); //Mapeo de Pre Evolución
     let stringPokeNextEvolution = stringOfType(POKEMON, typeDroplist).map(pokemon => pokemon.next_evolution); //Mapeo de Prox Evolución
-    console.log(objectPokePrevEvolution[2][1].name)
 
 
     const divCard = document.getElementById("contentOfCards");
@@ -57,7 +55,7 @@ function filterPokemonByName(pokemons, names) {
     };
 
     //Imprime por separado las cartas
-    for (let i = 0, len = stringPokeName.length; i < len; i++) {
+    for (let i = 0, len = stringPokeName.length; i < len; i++) {      
       let card = document.createElement("div");
       card.classList.add("card-style");
       card.innerHTML = "<img src=\"" + stringPokeImg[i] + 
@@ -88,8 +86,8 @@ function filterPokemonByName(pokemons, names) {
                               "<br>HUEVO: " + stringPokeEgg[i] + 
                               "<br>HORA DE SPAWNS: " + stringPokeSpawnTime[i] + 
                               "<br>DEBILIDADES: " + stringPokeWeaknesses[i] + 
-                              "<br>EVOLUCIÓN ANTERIOR: " + objectPokePrevEvolution[i] + 
-                              "<br>PRÓXIMA EVOLUCIÓN: " + stringPokeNextEvolution[i] + 
+                           //   "<br>EVOLUCIÓN ANTERIOR: " + objectPokePrevEvolution[i] + 
+                           //   "<br>PRÓXIMA EVOLUCIÓN: " + stringPokeNextEvolution[i] + 
                               "</div>";
       modal.appendChild(modalContent);
 
