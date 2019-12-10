@@ -108,11 +108,7 @@ body, h1 , h2 , h3 , p , br  {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-.selectArea #select1 { 
-=======
 .droplists {
->>>>>>> d8f5ac11286a1fd1de162505c2575a5c5183b6ff
   background: linear-gradient(284.34deg, #25CDAA 3.72%, rgba(255, 255, 255, 0) 108.48%), #A2D694;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
