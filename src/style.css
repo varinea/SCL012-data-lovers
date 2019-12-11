@@ -6,6 +6,7 @@
   background-repeat: repeat,							no-repeat;
   background-size: auto,							cover;
   padding: 9em 0 10em 0;
+  text-align: center; 
 }
 
 body {
@@ -16,31 +17,58 @@ body {
 
 /* Box blanco */
 #root {
-  background-color: darkkhaki;
-  width: 90% ;
-  margin:auto;
-
+  max-width: 90% ;
+  height: 90%;
+  padding: 10px;
+  margin: auto;
+  font-family: 'Raleway', sans-serif;
   display: -webkit-flex;
-  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  
-  flex-direction: row;
-  flex-wrap: no-wrap;
+
+  flex-grow: auto;
   justify-content: center;
+  align-items: center;
+}
+
+.selectArea {
+  text-align: center ;
+  
+}
+
+.droplists {
+  
+  background: linear-gradient(284.34deg, #25CDAA 3.72%, rgba(255, 255, 255, 0) 108.48%), #A2D694;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  color: #f0f0f0;
+  width: 10%;
+  height: 10%;
+  border: none;
+  margin: 15px;
 }
 
 .charizard {
-  margin: 0;
-  width: 500px;
-  height: 500px;
+  margin: 0 40%;
+  float: center;
 }
 
+.boxText2 {
+  margin: -50% 60% 0% -20%;
+  float: center;
+  padding: 10%;
+} 
 
 
-  .datalover {
-    font-family: 'Raleway', sans-serif;
-    text-align: left; 
-  }
+
+.datalover {
+  font-family: 'Raleway', sans-serif;
+  text-align: left; 
+}
 
 #contentOfCards {
   border: 1px solid black;
@@ -68,6 +96,7 @@ body {
   color: #4ab483
 }
 
+
 /* Modal de cada Pokémon individual */
 .modal {
   display: none; /* Hidden by default */
@@ -82,6 +111,7 @@ body {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
 
 /* Modal Content */
 .modal-content {
@@ -122,18 +152,6 @@ body {
   cursor: pointer;
 }
 
-.droplists {
-  background: linear-gradient(284.34deg, #25CDAA 3.72%, rgba(255, 255, 255, 0) 108.48%), #A2D694;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-  padding: 20px;
-  font-weight: 600;
-  font-size: 18px;
-  font-family: "Source Sans Pro", sans-serif;
-  width: 10%;
-  border: none;
-  margin: 15px;
-}
 
 footer {
   background: #f0f0f0;
@@ -159,4 +177,3 @@ footer {
     position: relative;
   }
 
-  
