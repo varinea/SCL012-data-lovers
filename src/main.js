@@ -1,7 +1,7 @@
 import {
   stringOfType, stringOfName, stringOfHeight, stringOfWeight,
   stringOfImg, stringOfCandy, stringOfCandyCount, stringOfEgg,
-  stringOfSpawnTime, stringOfWeaknesses 
+  stringOfSpawnTime, stringOfWeaknesses
 } from '/data.js';
 
 // Select de TIPO
@@ -26,11 +26,6 @@ selectFilterByType.addEventListener('change', () => {
   const stringPokeEgg = stringOfEgg('type', typeDroplist);
   const stringPokeSpawnTime = stringOfSpawnTime('type', typeDroplist);
   const stringPokeWeaknesses = stringOfWeaknesses('type', typeDroplist);
-  /* let objectPokePrevEvolution = stringOfType(typeDroplist).map(pokemon => pokemon.prev_evolution)
-  .map(x => x !== undefined ? x : 'No tiene'); //Mapeo de Pre Evolución */
-  /* let stringPokeNextEvolution = stringOfType(typeDroplist).map(pokemon => pokemon.next_evolution)
-  .map(x => x !== undefined ? x : 'No tiene'); //Mapeo de Prox Evolución */
-
 
   // Borra todos los hijos de Content of Cards antes de imprimir
   const divCard = document.getElementById('contentOfCards');
@@ -50,12 +45,10 @@ selectFilterByType.addEventListener('change', () => {
                       + '<br><br><p class=\'see-more\'>Ver más</p>';
     document.getElementById('contentOfCards').appendChild(card);
 
-
     // Creación del div del Modal
     const modal = document.createElement('div');
     modal.classList.add('modal');
     document.getElementById('contentOfCards').appendChild(modal);
-
 
     // Creación del contenido del Modal, dentro del div Modal
     const modalContent = document.createElement('div');
@@ -70,8 +63,6 @@ selectFilterByType.addEventListener('change', () => {
                             + '<br>HUEVO: ' + stringPokeEgg[i]
                             + '<br>HORA DE SPAWNS: ' + stringPokeSpawnTime[i]
                             + '<br>DEBILIDADES: ' + stringPokeWeaknesses[i]
-                            // + '<br>EVOLUCIÓN ANTERIOR: ' + objectPokePrevEvolution[i] +
-                            // + '<br>PRÓXIMA EVOLUCIÓN: ' + stringPokeNextEvolution[i][0].name +
                             + '</div>';
     modal.appendChild(modalContent);
 
@@ -135,13 +126,10 @@ selectFilterByWeak.addEventListener('change', () => {
                     + '<br><br><p class=\'see-more\'>Ver más</p>';
     document.getElementById('contentOfCards').appendChild(card);
 
-    document.getElementById('contentOfCards').appendChild(card);
-
     // Creación del div del Modal
     const modal = document.createElement('div');
     modal.classList.add('modal');
     document.getElementById('contentOfCards').appendChild(modal);
-
 
     // Creación del contenido del Modal, dentro del div Modal
     const modalContent = document.createElement('div');
@@ -156,8 +144,6 @@ selectFilterByWeak.addEventListener('change', () => {
                             + '<br>HUEVO: ' + stringPokeEgg[i]
                             + '<br>HORA DE SPAWNS: ' + stringPokeSpawnTime[i]
                             + '<br>DEBILIDADES: ' + stringPokeWeaknesses[i]
-                            // + '<br>EVOLUCIÓN ANTERIOR: ' + objectPokePrevEvolution[i] +
-                            // + '<br>PRÓXIMA EVOLUCIÓN: ' + stringPokeNextEvolution[i][0].name +
                             + '</div>';
     modal.appendChild(modalContent);
 
@@ -222,12 +208,10 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
                       + '<br><br><p class=\'see-more\'>Ver más</p>';
       document.getElementById('contentOfCards').appendChild(card);
 
-
       // Creación del div del Modal
       const modal = document.createElement('div');
       modal.classList.add('modal');
       document.getElementById('contentOfCards').appendChild(modal);
-
 
       // Creación del contenido del Modal, dentro del div Modal
       const modalContent = document.createElement('div');
@@ -242,8 +226,6 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
                               + '<br>HUEVO: ' + stringPokeEgg[i]
                               + '<br>HORA DE SPAWNS: ' + stringPokeSpawnTime[i]
                               + '<br>DEBILIDADES: ' + stringPokeWeaknesses[i]
-                              // + '<br>EVOLUCIÓN ANTERIOR: ' + objectPokePrevEvolution[i] +
-                              // + '<br>PRÓXIMA EVOLUCIÓN: ' + stringPokeNextEvolution[i][0].name +
                               + '</div>';
       modal.appendChild(modalContent);
 
