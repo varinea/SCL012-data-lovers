@@ -1,4 +1,8 @@
-import { stringOfType, stringOfWeak, pokemonByName } from '/data.js';
+import {
+  stringOfType, stringOfName, stringOfHeight, stringOfWeight,
+  stringOfImg, stringOfCandy, stringOfCandyCount, stringOfEgg,
+  stringOfSpawnTime, stringOfWeaknesses 
+} from '/data.js';
 
 // Select de TIPO
 const selectFilterByType = document.getElementById('selectType');
@@ -12,16 +16,16 @@ selectFilterByType.addEventListener('change', () => {
   const typeDroplist = document.getElementById('selectType').value; // Valor del droplist de tipo
 
   // Todas las variables que aparecen en las tarjetas de cada Pokemón
-  const stringPokeName = stringOfType(typeDroplist).map(pokemon => pokemon.name);
-  const stringPokeType = stringOfType(typeDroplist).map(pokemon => pokemon.type);
-  const stringPokeHeight = stringOfType(typeDroplist).map(pokemon => pokemon.height);
-  const stringPokeWeight = stringOfType(typeDroplist).map(pokemon => pokemon.weight);
-  const stringPokeImg = stringOfType(typeDroplist).map(pokemon => pokemon.img);
-  const stringPokeCandy = stringOfType(typeDroplist).map(pokemon => pokemon.candy);
-  const stringPokeCandyCount = stringOfType(typeDroplist).map(pokemon => pokemon.candy_count).map(x => x !== undefined ? x : 'No aplica');
-  const stringPokeEgg = stringOfType(typeDroplist).map(pokemon => pokemon.egg).map(x => x !== 'Not in Eggs' ? x : 'No está en huevos');
-  const stringPokeSpawnTime = stringOfType(typeDroplist).map(pokemon => pokemon.spawn_time);
-  const stringPokeWeaknesses = stringOfType(typeDroplist).map(pokemon => pokemon.weaknesses);
+  const stringPokeName = stringOfName('type', typeDroplist);
+  const stringPokeType = stringOfType('type', typeDroplist);
+  const stringPokeHeight = stringOfHeight('type', typeDroplist);
+  const stringPokeWeight = stringOfWeight('type', typeDroplist);
+  const stringPokeImg = stringOfImg('type', typeDroplist);
+  const stringPokeCandy = stringOfCandy('type', typeDroplist);
+  const stringPokeCandyCount = stringOfCandyCount('type', typeDroplist);
+  const stringPokeEgg = stringOfEgg('type', typeDroplist);
+  const stringPokeSpawnTime = stringOfSpawnTime('type', typeDroplist);
+  const stringPokeWeaknesses = stringOfWeaknesses('type', typeDroplist);
   /* let objectPokePrevEvolution = stringOfType(typeDroplist).map(pokemon => pokemon.prev_evolution)
   .map(x => x !== undefined ? x : 'No tiene'); //Mapeo de Pre Evolución */
   /* let stringPokeNextEvolution = stringOfType(typeDroplist).map(pokemon => pokemon.next_evolution)
@@ -35,14 +39,14 @@ selectFilterByType.addEventListener('change', () => {
   }
 
   // Imprime por separado las cartas
-  for (let i = 0, len = stringPokeName.length; i < len; i++) {
+  for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
     const card = document.createElement('div');
     card.classList.add('card-style');
     card.innerHTML = '<img src=\'' + stringPokeImg[i]
                       + '\'><br><h3>' + stringPokeName[i]
                       + '</h3>TIPO: ' + stringPokeType[i]
-                      + '<br> <p>ALTURA:</p> ' + stringPokeHeight[i]
-                      + '<br> <p>PESO:</p> ' + stringPokeWeight[i]
+                      + '<br><p>ALTURA:</p> ' + stringPokeHeight[i]
+                      + '<br><p>PESO:</p> ' + stringPokeWeight[i]
                       + '<br><br><p class=\'see-more\'>Ver más</p>';
     document.getElementById('contentOfCards').appendChild(card);
 
@@ -56,9 +60,9 @@ selectFilterByType.addEventListener('change', () => {
     // Creación del contenido del Modal, dentro del div Modal
     const modalContent = document.createElement('div');
     modalContent.classList.add('modal-content');
-    modalContent.innerHTML = '<div class=\'pokemon-description\'><img src=\'' + stringPokeImg[i]
+    modalContent.innerHTML = '<div class=\'pokemon-description\'> <img src=\'' + stringPokeImg[i]
                             + '\'><br><h3>' + stringPokeName[i]
-                            + '</h3>TIPO: ' + stringPokeType[i]
+                            + '</h3> TIPO: ' + stringPokeType[i]
                             + '<br> ALTURA: ' + stringPokeHeight[i]
                             + '<br> PESO: ' + stringPokeWeight[i]
                             + '<br>CANDY: ' + stringPokeCandy[i]
@@ -102,16 +106,16 @@ selectFilterByWeak.addEventListener('change', () => {
   const weakeDroplist = document.getElementById('selectWeak').value; // Valor del droplist de tipo
 
   // Todas las variables que aparecen en las tarjetas de cada Pokemón
-  const stringPokeName = stringOfWeak(weakeDroplist).map(pokemon => pokemon.name);
-  const stringPokeType = stringOfWeak(weakeDroplist).map(pokemon => pokemon.type);
-  const stringPokeHeight = stringOfWeak(weakeDroplist).map(pokemon => pokemon.height);
-  const stringPokeWeight = stringOfWeak(weakeDroplist).map(pokemon => pokemon.weight);
-  const stringPokeImg = stringOfWeak(weakeDroplist).map(pokemon => pokemon.img);
-  const stringPokeCandy = stringOfWeak(weakeDroplist).map(pokemon => pokemon.candy);
-  const stringPokeCandyCount = stringOfWeak(weakeDroplist).map(pokemon => pokemon.candy_count).map(x => x !== undefined ? x : 'No aplica');
-  const stringPokeEgg = stringOfWeak(weakeDroplist).map(pokemon => pokemon.egg).map(x => x !== 'Not in Eggs' ? x : 'No está en huevos');
-  const stringPokeSpawnTime = stringOfWeak(weakeDroplist).map(pokemon => pokemon.spawn_time);
-  const stringPokeWeaknesses = stringOfWeak(weakeDroplist).map(pokemon => pokemon.weaknesses);
+  const stringPokeName = stringOfName('weaknesses', weakeDroplist);
+  const stringPokeType = stringOfType('weaknesses', weakeDroplist);
+  const stringPokeHeight = stringOfHeight('weaknesses', weakeDroplist);
+  const stringPokeWeight = stringOfWeight('weaknesses', weakeDroplist);
+  const stringPokeImg = stringOfImg('weaknesses', weakeDroplist);
+  const stringPokeCandy = stringOfCandy('weaknesses', weakeDroplist);
+  const stringPokeCandyCount = stringOfCandyCount('weaknesses', weakeDroplist);
+  const stringPokeEgg = stringOfEgg('weaknesses', weakeDroplist);
+  const stringPokeSpawnTime = stringOfSpawnTime('weaknesses', weakeDroplist);
+  const stringPokeWeaknesses = stringOfWeaknesses('weaknesses', weakeDroplist);
 
   // Borra todos los hijos de Content of Cards antes de imprimir
   const divCard = document.getElementById('contentOfCards');
@@ -120,7 +124,7 @@ selectFilterByWeak.addEventListener('change', () => {
   }
 
   // Imprime por separado las cartas
-  for (let i = 0, len = stringPokeName.length; i < len; i++) {
+  for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
     const card = document.createElement('div');
     card.classList.add('card-style');
     card.innerHTML = '<img src=\'' + stringPokeImg[i]
@@ -183,22 +187,22 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
     document.getElementById('selectWeak').value = ''; // Resetea los selects para que vuelta a su valor original
 
     // Valor del input del Search en minúscula
-    const inputSearchLowercase = document.getElementById('searchBar').value.toLowerCase();
+    const inputSearchRaw = document.getElementById('searchBar').value;
 
     // Mayúscula la primera letra de input para poder buscar
-    const inputSearch = inputSearchLowercase.charAt(0).toUpperCase() + inputSearchLowercase.slice(1);
+    const inputSearch = inputSearchRaw.charAt(0).toUpperCase() + inputSearchRaw.slice(1).toLowerCase();
 
     // Todas las variables que aparecen en las tarjetas de cada Pokemón
-    const stringPokeName = pokemonByName(inputSearch).map(pokemon => pokemon.name);
-    const stringPokeType = pokemonByName(inputSearch).map(pokemon => pokemon.type);
-    const stringPokeHeight = pokemonByName(inputSearch).map(pokemon => pokemon.height);
-    const stringPokeWeight = pokemonByName(inputSearch).map(pokemon => pokemon.weight);
-    const stringPokeImg = pokemonByName(inputSearch).map(pokemon => pokemon.img);
-    const stringPokeCandy = pokemonByName(inputSearch).map(pokemon => pokemon.candy);
-    const stringPokeCandyCount = pokemonByName(inputSearch).map(pokemon => pokemon.candy_count).map(x => x !== undefined ? x : 'No aplica');
-    const stringPokeEgg = pokemonByName(inputSearch).map(pokemon => pokemon.egg).map(x => x !== 'Not in Eggs' ? x : 'No está en huevos');
-    const stringPokeSpawnTime = pokemonByName(inputSearch).map(pokemon => pokemon.spawn_time);
-    const stringPokeWeaknesses = pokemonByName(inputSearch).map(pokemon => pokemon.weaknesses);
+    const stringPokeName = stringOfName('name', inputSearch);
+    const stringPokeType = stringOfType('name', inputSearch);
+    const stringPokeHeight = stringOfHeight('name', inputSearch);
+    const stringPokeWeight = stringOfWeight('name', inputSearch);
+    const stringPokeImg = stringOfImg('name', inputSearch);
+    const stringPokeCandy = stringOfCandy('name', inputSearch);
+    const stringPokeCandyCount = stringOfCandyCount('name', inputSearch);
+    const stringPokeEgg = stringOfEgg('name', inputSearch);
+    const stringPokeSpawnTime = stringOfSpawnTime('name', inputSearch);
+    const stringPokeWeaknesses = stringOfWeaknesses('name', inputSearch);
 
     // Borra todos los hijos de Content of Cards antes de imprimir
     const divCard = document.getElementById('contentOfCards');
@@ -207,7 +211,7 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
     }
 
     // Imprime por separado las cartas
-    for (let i = 0, len = stringPokeName.length; i < len; i++) {
+    for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
       const card = document.createElement('div');
       card.classList.add('card-style');
       card.innerHTML = '<img src=\'' + stringPokeImg[i]
