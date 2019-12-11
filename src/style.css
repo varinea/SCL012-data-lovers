@@ -6,64 +6,65 @@
   background-repeat: repeat,							no-repeat;
   background-size: auto,							cover;
   padding: 9em 0 10em 0;
-  text-align: center; 
+  text-align: center;
+  /* solucionar para que quede arriba */
 }
 
 body {
-  margin: 0px;
+  margin: 0;
+  align-content: center;
   font-family: 'Raleway', sans-serif;
   color: #8b8a8a;
 }
 
-/* Box blanco */
-#root {
-  max-width: 90% ;
-  height: 90%;
-  padding: 10px;
-  margin: auto;
-  font-family: 'Raleway', sans-serif;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-
-  flex-grow: auto;
-  justify-content: center;
-  align-items: center;
+.container {
+  max-width: 90%;
+  height: 80%;
+  margin:  auto;
+  padding: 1em 1em 12em 1em;
 }
 
-.selectArea {
-  text-align: center ;
-  
+.searchClass {
+    width:170px;
+    margin:5px;
+    padding:10px 16px;
+    border-radius:20px;
+    outline:none;
+    border:2px linear-gradient(284.34deg, #25CDAA 3.72%, rgba(255, 255, 255, 0) 108.48%), #A2D694;;
+    background: white;
+   
 }
 
 .droplists {
-  
   background: linear-gradient(284.34deg, #25CDAA 3.72%, rgba(255, 255, 255, 0) 108.48%), #A2D694;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
-  padding: 15px;
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
   color: #f0f0f0;
-  width: 10%;
-  height: 10%;
+  text-align: center;
+
+  padding: 1% 2% 1% 2%;
   border: none;
-  margin: 15px;
+  margin: 20px;
+}
+
+.selectArea {
+  text-align: center;
 }
 
 .charizard {
-  margin: 0 40%;
-  float: center;
+  margin: -5% 0% 0% 35%;
+  padding: 10%;
 }
 
 .boxText2 {
-  margin: -50% 60% 0% -20%;
-  float: center;
+  margin: -60% 50% 0% -5%;
+
   padding: 10%;
+  text-align: left;
 } 
-
-
 
 .datalover {
   font-family: 'Raleway', sans-serif;
@@ -96,7 +97,6 @@ body {
   color: #4ab483
 }
 
-
 /* Modal de cada Pokémon individual */
 .modal {
   display: none; /* Hidden by default */
@@ -111,7 +111,6 @@ body {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
 
 /* Modal Content */
 .modal-content {
@@ -152,7 +151,6 @@ body {
   cursor: pointer;
 }
 
-
 footer {
   background: #f0f0f0;
   padding: 4em 0 6em 0;
@@ -176,4 +174,3 @@ footer {
 		border-bottom: none;
     position: relative;
   }
-
