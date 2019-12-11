@@ -1,13 +1,19 @@
 // importamos la función `example`
-import { example } from "../src/data";
+import { stringOfType, stringOfWeak, pokemonByName } from '../src/data.js';
+// import POKEMON from '../src/data/pokemon/pokemon.js';
 
-describe('example', () => {
+describe('Data', () => {
 
-  it('debería ser una función', () => {
-    expect(typeof example).toBe('function');
+  it('stringOfType debería ser una función', () => {
+    expect(typeof stringOfType).toBe('function');
   });
 
-  describe('example', () => {
-    // escribe aquí tu test
+  it('stringOfWeak debería ser una función', () => {
+    expect(typeof stringOfWeak).toBe('function');
   });
+
+  it('pokemonByName debería ser una función', () => {
+    expect(typeof pokemonByName).toBe('function');
+  });
+
 });

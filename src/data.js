@@ -1,20 +1,20 @@
 
-import POKEMON from './data/pokemon/pokemon.js'
+import POKEMON from './data/pokemon/pokemon.js';
 
-//Función de filtrar por Tipo
-let stringOfType = function filterPokemonByType(types) {
+// Función de filtrar por Tipo
+const stringOfType = function filterPokemonByType(types) {
   return POKEMON.filter(pokemon => pokemon.type.includes(types));
 };
+console.log(stringOfType)
 
-//Función de filtrar por Debilidades
-let stringOfWeak = function filterPokemonByWeakness(weak) {
+// Función de filtrar por Debilidades
+const stringOfWeak = function filterPokemonByWeakness(weak) {
   return POKEMON.filter(pokemon => pokemon.weaknesses.includes(weak));
 };
 
-//Función de filtrar por Nombre
-let pokemonByName = function filterPokemonByName(names) {
+// Función de filtrar por Nombre
+const pokemonByName = function filterPokemonByName(names) {
   return POKEMON.filter(pokemon => pokemon.name.includes(names));
 };
 
-export {stringOfType, stringOfWeak, pokemonByName}
-
+export { stringOfType, stringOfWeak, pokemonByName };
