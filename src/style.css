@@ -208,9 +208,10 @@ footer {
 
   @media screen and (max-width: 480px) {
 
-  .imgLogo {
+  #banner .imgLogo {
     width: 100%;
     display: flex;
+    justify-content: center;
   } 
 
   body {
@@ -230,11 +231,8 @@ footer {
     display: flex;
     width: 80%;
     margin: 0%;
-   
     flex-direction: column;
     justify-content: center;
-    
-   
   }
 
 }
