@@ -7,6 +7,7 @@
   background-size: auto,							cover;
   padding: 9% 0% 10% 0%;
   text-align: center;
+  box-sizing: border-box;
   /* solucionar para que quede arriba */
 }
 
@@ -18,10 +19,9 @@ body {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 100%;
   height: 80%;
   margin:  auto;
-  padding: 1% 1% 12% 1%;
 }
 
 .searchClass {   
@@ -182,6 +182,7 @@ footer {
   text-align: center;
   list-style: none;
   font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
 }
 .footerText1 {
   font-size: 1em;
@@ -201,12 +202,39 @@ footer {
   }
 
 
+
+
+
+
   @media screen and (max-width: 480px) {
+
+  .imgLogo {
+    width: 100%;
+    display: flex;
+  } 
+
+  body {
+    text-align: center;
+  }
+ .charizard {
+   margin: 0%;
+   padding: 0%;
+    width: 100%;
+    display: flex;
    
-  #banner {
-  display: flex;
-  align-content: center;
-  
+    justify-content: center;
+    align-items: center;
+  }
+
+   .boxText2 {
+    display: flex;
+    width: 80%;
+    margin: 0%;
+   
+    flex-direction: column;
+    justify-content: center;
+    
+   
   }
 
 }
