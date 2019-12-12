@@ -4,13 +4,11 @@ import POKEMON from './data/pokemon/pokemon.js';
 const stringOfName = (newFilter, currentSelect) => {
   return POKEMON.filter((pokemon) => pokemon[newFilter].includes(currentSelect)).map((pokemon) => pokemon.name);
 };
-console.log(stringOfName('type','Grass'))
 
 // Función de mapear por tipo
 const stringOfType = (newFilter, currentSelect) => {
   return POKEMON.filter((pokemon) => pokemon[newFilter].includes(currentSelect)).map((pokemon) => pokemon.type);
 };
-console.log(stringOfType('weaknesses','Fairy'))
 
 // Función de mapear por Altura
 const stringOfHeight = (newFilter, currentSelect) => {
