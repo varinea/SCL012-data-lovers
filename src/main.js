@@ -168,7 +168,7 @@ selectFilterByWeak.addEventListener('change', () => {
 });
 
 
-// Función del Search
+// Función del SEARCH
 document.getElementById('searchBar').addEventListener('keydown', (e) => {
   if (e.keyCode === 13) {
     document.getElementById('selectType').value = ''; // Resetea los selects para que vuelta a su valor original
