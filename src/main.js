@@ -2,7 +2,7 @@ import {
   stringOfType, stringOfName, stringOfHeight, stringOfWeight,
   stringOfImg, stringOfCandy, stringOfCandyCount, stringOfEgg,
   stringOfSpawnTime, stringOfWeaknesses
-} from '/data.js';
+} from './data.js';
 
 // Select de TIPO
 const selectFilterByType = document.getElementById('selectType');
@@ -168,7 +168,7 @@ selectFilterByWeak.addEventListener('change', () => {
 });
 
 
-// Función del Search
+// Función del SEARCH
 document.getElementById('searchBar').addEventListener('keydown', (e) => {
   if (e.keyCode === 13) {
     document.getElementById('selectType').value = ''; // Resetea los selects para que vuelta a su valor original
@@ -221,12 +221,12 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
       modalContent.innerHTML = `<div class='pokemon-description'> 
                                 <img src='${stringPokeImg[i]}'>
                                 <h3>${stringPokeName[i]}</h3>
-                                <p class='modal-p'>TIPO: ${stringPokeType[i]}</p>
-                                <p class='modal-p'>ALTURA: ${stringPokeHeight[i]}</p>
-                                <p class='modal-p'>PESO: ${stringPokeWeight[i]}</p>
-                                <p class='modal-p'>CANDY: ${stringPokeCandy[i]}</p>
-                                <p class='modal-p'>Nº DE CANDIES PARA EVOLUCIONAR: ${stringPokeCandyCount[i]}</p>
-                                <p class='modal-p'>HUEVO: ${stringPokeEgg[i]}</p>
+                                <p><span class='modal-p'>TIPO: </span>${stringPokeType[i]}</p> 
+                                <p><span class='modal-p'>ALTURA: ${stringPokeHeight[i]}</p>
+                                <p><span class='modal-p'>PESO: ${stringPokeWeight[i]}</p>
+                                <p><span class='modal-p'>CANDY: ${stringPokeCandy[i]}</p>
+                                <p>Nº DE CANDIES PARA EVOLUCIONAR: ${stringPokeCandyCount[i]}</p>
+                                <p>HUEVO: ${stringPokeEgg[i]}</p>
                                 <p class='modal-p'>HORA DE SPAWNS: ${stringPokeSpawnTime[i]}</p>
                                 <p class='modal-p'>DEBILIDADES: ${stringPokeWeaknesses[i]}</p>
                                 </div>`;
