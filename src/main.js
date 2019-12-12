@@ -37,12 +37,12 @@ selectFilterByType.addEventListener('change', () => {
   for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
     const card = document.createElement('div');
     card.classList.add('card-style');
-    card.innerHTML = '<img src=\'' + stringPokeImg[i]
-                      + '\'><br><h3>' + stringPokeName[i]
-                      + '</h3>TIPO: ' + stringPokeType[i]
-                      + '<br><p>ALTURA:</p> ' + stringPokeHeight[i]
-                      + '<br><p>PESO:</p> ' + stringPokeWeight[i]
-                      + '<br><br><p class=\'see-more\'>Ver más</p>';
+    card.innerHTML = `<img src=' ${stringPokeImg[i]}'>
+                      <h3>${stringPokeName[i]}</h3>
+                      <p>TIPO: ${stringPokeType[i]}</p>
+                      <p>ALTURA: ${stringPokeHeight[i]}</p>
+                      <p>PESO: ${stringPokeWeight[i]}</p>
+                      <p class='see-more'>Ver más</p>`;
     document.getElementById('contentOfCards').appendChild(card);
 
     // Creación del div del Modal
@@ -53,17 +53,18 @@ selectFilterByType.addEventListener('change', () => {
     // Creación del contenido del Modal, dentro del div Modal
     const modalContent = document.createElement('div');
     modalContent.classList.add('modal-content');
-    modalContent.innerHTML = '<div class=\'pokemon-description\'> <img src=\'' + stringPokeImg[i]
-                            + '\'><br><h3>' + stringPokeName[i]
-                            + '</h3> TIPO: ' + stringPokeType[i]
-                            + '<br> ALTURA: ' + stringPokeHeight[i]
-                            + '<br> PESO: ' + stringPokeWeight[i]
-                            + '<br>CANDY: ' + stringPokeCandy[i]
-                            + '<br>Nº DE CANDIES PARA EVOLUCIONAR: ' + stringPokeCandyCount[i]
-                            + '<br>HUEVO: ' + stringPokeEgg[i]
-                            + '<br>HORA DE SPAWNS: ' + stringPokeSpawnTime[i]
-                            + '<br>DEBILIDADES: ' + stringPokeWeaknesses[i]
-                            + '</div>';
+    modalContent.innerHTML = `<div class='pokemon-description'> 
+                              <img src='${stringPokeImg[i]}'>
+                              <h3>${stringPokeName[i]}</h3>
+                              <p class='modal-p'>TIPO: ${stringPokeType[i]}</p>
+                              <p class='modal-p'>ALTURA: ${stringPokeHeight[i]}</p>
+                              <p class='modal-p'>PESO: ${stringPokeWeight[i]}</p>
+                              <p class='modal-p'>CANDY: ${stringPokeCandy[i]}</p>
+                              <p class='modal-p'>Nº DE CANDIES PARA EVOLUCIONAR: ${stringPokeCandyCount[i]}</p>
+                              <p class='modal-p'>HUEVO: ${stringPokeEgg[i]}</p>
+                              <p class='modal-p'>HORA DE SPAWNS: ${stringPokeSpawnTime[i]}</p>
+                              <p class='modal-p'>DEBILIDADES: ${stringPokeWeaknesses[i]}</p>
+                              </div>`;
     modal.appendChild(modalContent);
 
     // Span del X del modal
@@ -118,12 +119,12 @@ selectFilterByWeak.addEventListener('change', () => {
   for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
     const card = document.createElement('div');
     card.classList.add('card-style');
-    card.innerHTML = '<img src=\'' + stringPokeImg[i]
-                    + '\'><br><h3>' + stringPokeName[i]
-                    + '</h3>TIPO: ' + stringPokeType[i]
-                    + '<br> <p>ALTURA:</p> ' + stringPokeHeight[i]
-                    + '<br> <p>PESO:</p> ' + stringPokeWeight[i]
-                    + '<br><br><p class=\'see-more\'>Ver más</p>';
+    card.innerHTML = `<img src=' ${stringPokeImg[i]}'>
+                      <h3>${stringPokeName[i]}</h3>
+                      <p>TIPO: ${stringPokeType[i]}</p>
+                      <p>ALTURA: ${stringPokeHeight[i]}</p>
+                      <p>PESO: ${stringPokeWeight[i]}</p>
+                      <p class='see-more'>Ver más</p>`;
     document.getElementById('contentOfCards').appendChild(card);
 
     // Creación del div del Modal
@@ -134,17 +135,18 @@ selectFilterByWeak.addEventListener('change', () => {
     // Creación del contenido del Modal, dentro del div Modal
     const modalContent = document.createElement('div');
     modalContent.classList.add('modal-content');
-    modalContent.innerHTML = '<div class=\'pokemon-description\'><img src=\'' + stringPokeImg[i]
-                            + '\'><br><h3>' + stringPokeName[i]
-                            + '</h3>TIPO: ' + stringPokeType[i]
-                            + '<br> ALTURA: ' + stringPokeHeight[i]
-                            + '<br> PESO: ' + stringPokeWeight[i]
-                            + '<br>CANDY: ' + stringPokeCandy[i]
-                            + '<br>Nº DE CANDIES PARA EVOLUCIONAR: ' + stringPokeCandyCount[i]
-                            + '<br>HUEVO: ' + stringPokeEgg[i]
-                            + '<br>HORA DE SPAWNS: ' + stringPokeSpawnTime[i]
-                            + '<br>DEBILIDADES: ' + stringPokeWeaknesses[i]
-                            + '</div>';
+    modalContent.innerHTML = `<div class='pokemon-description'> 
+                              <img src='${stringPokeImg[i]}'>
+                              <h3>${stringPokeName[i]}</h3>
+                              <p class='modal-p'>TIPO: ${stringPokeType[i]}</p>
+                              <p class='modal-p'>ALTURA: ${stringPokeHeight[i]}</p>
+                              <p class='modal-p'>PESO: ${stringPokeWeight[i]}</p>
+                              <p class='modal-p'>CANDY: ${stringPokeCandy[i]}</p>
+                              <p class='modal-p'>Nº DE CANDIES PARA EVOLUCIONAR: ${stringPokeCandyCount[i]}</p>
+                              <p class='modal-p'>HUEVO: ${stringPokeEgg[i]}</p>
+                              <p class='modal-p'>HORA DE SPAWNS: ${stringPokeSpawnTime[i]}</p>
+                              <p class='modal-p'>DEBILIDADES: ${stringPokeWeaknesses[i]}</p>
+                              </div>`;
     modal.appendChild(modalContent);
 
     // Span del X del modal
@@ -200,12 +202,12 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
     for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
       const card = document.createElement('div');
       card.classList.add('card-style');
-      card.innerHTML = '<img src=\'' + stringPokeImg[i]
-                      + '\'><br><h3>' + stringPokeName[i]
-                      + '</h3>TIPO: ' + stringPokeType[i]
-                      + '<br> <p>ALTURA:</p> ' + stringPokeHeight[i]
-                      + '<br> <p>PESO:</p> ' + stringPokeWeight[i]
-                      + '<br><br><p class=\'see-more\'>Ver más</p>';
+      card.innerHTML = `<img src=' ${stringPokeImg[i]}'>
+                        <h3>${stringPokeName[i]}</h3>
+                        <p>TIPO: ${stringPokeType[i]}</p>
+                        <p>ALTURA: ${stringPokeHeight[i]}</p>
+                        <p>PESO: ${stringPokeWeight[i]}</p>
+                        <p class='see-more'>Ver más</p>`;
       document.getElementById('contentOfCards').appendChild(card);
 
       // Creación del div del Modal
@@ -216,17 +218,18 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
       // Creación del contenido del Modal, dentro del div Modal
       const modalContent = document.createElement('div');
       modalContent.classList.add('modal-content');
-      modalContent.innerHTML = '<div class=\'pokemon-description\'><img src=\'' + stringPokeImg[i]
-                              + '\'><br><h3>' + stringPokeName[i]
-                              + '</h3>TIPO: ' + stringPokeType[i]
-                              + '<br> ALTURA: ' + stringPokeHeight[i]
-                              + '<br> PESO: ' + stringPokeWeight[i]
-                              + '<br>CANDY: ' + stringPokeCandy[i]
-                              + '<br>Nº DE CANDIES PARA EVOLUCIONAR: ' + stringPokeCandyCount[i]
-                              + '<br>HUEVO: ' + stringPokeEgg[i]
-                              + '<br>HORA DE SPAWNS: ' + stringPokeSpawnTime[i]
-                              + '<br>DEBILIDADES: ' + stringPokeWeaknesses[i]
-                              + '</div>';
+      modalContent.innerHTML = `<div class='pokemon-description'> 
+                                <img src='${stringPokeImg[i]}'>
+                                <h3>${stringPokeName[i]}</h3>
+                                <p class='modal-p'>TIPO: ${stringPokeType[i]}</p>
+                                <p class='modal-p'>ALTURA: ${stringPokeHeight[i]}</p>
+                                <p class='modal-p'>PESO: ${stringPokeWeight[i]}</p>
+                                <p class='modal-p'>CANDY: ${stringPokeCandy[i]}</p>
+                                <p class='modal-p'>Nº DE CANDIES PARA EVOLUCIONAR: ${stringPokeCandyCount[i]}</p>
+                                <p class='modal-p'>HUEVO: ${stringPokeEgg[i]}</p>
+                                <p class='modal-p'>HORA DE SPAWNS: ${stringPokeSpawnTime[i]}</p>
+                                <p class='modal-p'>DEBILIDADES: ${stringPokeWeaknesses[i]}</p>
+                                </div>`;
       modal.appendChild(modalContent);
 
       // Span del X del modal
