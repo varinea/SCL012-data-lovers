@@ -28,13 +28,13 @@ aquí podrás encontrar muchas cosas necesaria para poder ser el mejor maestro P
 
 Para el equipo de Pokepedia Go es importante hacer que tu experiencia como jugador sea más entretenida, nos encargaremos de darte tips y pistas para poder descubrir el Pokémon que quieres atrapar, también puedes saber las debilidades de los pokémon de tu contrincante y muchas cosas más.
 
-Para poder utilizar esta aplicación debes tener una cuenta registrada en el juego y tener un minímo de experiencia capturando tus pokémons.
+Para poder utilizar esta aplicación debes tener una cuenta registrada en el juego y tener un mínimo de experiencia capturando tus pokémons.
 
 Explora la página y ¡descubre!
 
 # 2. Resumen del proyecto
 
-Para este proyecto vivimos la experencía de crear una página web desde cero, logrando visualizar un conjunto de datos que se adecúe a lo que nuestros usuarios necesitan.
+Para este proyecto vivimos la experiencia de crear una página web desde cero, logrando visualizar un conjunto de datos que se adecúe a lo que nuestros usuarios necesitan.
 
  En nuestra página el usuario podrá:
 
@@ -51,11 +51,11 @@ Dentro de los diferentes temas que nos entregaba la data, decidimos seleccionar 
 
 ### Creando nuestras Historias de Usuario
 
-En esta ocasión se nos pidio crear tres historias de usuario las que serían claves para la creación de nuestra página, basandonos en nuestras propias experiencias con Pokemon GO, creamos tres historias de usuarios donde lo primordial estaba en **derrotar gimnasios y al equipo rocket** (Evento de Pokemon Go implementado este año).-
+En esta ocasión se nos pidio crear tres historias de usuario las que serían claves para la creación de nuestra página, basándonos en nuestras propias experiencias con Pokémon GO, creamos tres historias de usuarios donde lo primordial estaba en **derrotar gimnasios y al equipo rocket** (Evento de Pokémon Go implementado este año).-
 
 ### **1era Historia de Usuario**
 
-Yo COMO usuaria QUISIERA saber que pokémon hay de cada tipo PARA tener mayor variedad en mi colección.
+Yo COMO usuaria QUISIERA saber qué Pokémon hay de cada tipo PARA tener mayor variedad en mi colección.
 
 ### **2da Historia de Usuario** 
 
@@ -63,23 +63,23 @@ Yo COMO usuaria de la app QUISIERA saber cuáles Pokémons son débiles ante mi 
 
 ### **3era Historia de Usuario** 
 
-Yo COMO usuaria QUISIERA saber cuándo es más probable que salga cierto pokémon PARA atraparlo.
+Yo COMO usuaria QUISIERA saber cuándo es más probable que salga cierto Pokémon PARA atraparlo.
 
 Tomando estas historias, comenzamos con el diseño de la página.
 
 # 4. Organización del Proyecto
 
-Para este extenso proyecto el equipo Poképedia se organizo por metas diarias, donde nuestros objetivos principales eran alcanzar a realizar o modificar algún aspecto de nuestra página, ya sea, crear los prototipos, crear HTML, CSS o Javascript, para todo esto nos ayudamos con [Trello](https://trello.com/b/RDfmAMNS/pok%C3%A9mon-go-wiki).
+Para este extenso proyecto el equipo Poképedia se organizó por metas diarias, donde nuestros objetivos principales eran alcanzar a realizar o modificar algún aspecto de nuestra página, ya sea, crear los prototipos, crear HTML, CSS o Javascript, para todo esto nos ayudamos con [Trello](https://trello.com/b/RDfmAMNS/pok%C3%A9mon-go-wiki).
 
 
 # 5. Desarrollo de página web
 
-Para lograr visualizar la app comenzamos con ver cuales eran nuestro conocimientos previos sobre el proyecto los cuales eran:
+Para lograr visualizar la app comenzamos con ver cuáles eran nuestro conocimientos previos sobre el proyecto los cuales eran:
 
 ![imagen](src/img_readme/Conocimientos_Previos.jpg)
 
 
-Teniendo estas ideas claras comenzamos a investigar más a fondo sobre Pokémon Go, observamos los colores de las página, animaciones, diseños, estilo de los pokémon, etc.
+Teniendo estas ideas claras comenzamos a investigar más a fondo sobre Pokémon Go, observamos los colores de las página, animaciones, diseños, estilo de los Pokémon, etc.
 
 # 5.1 Prototipo de baja fidelidad
 
@@ -93,7 +93,7 @@ Primeros bocetos creados usando papel y lápiz.
 
 Consultando y testeando nuestro prototipo de baja fidelidad a diferentes personas que habían utilizado Pokémon GO comenzamos a visualizar como podría ser nuestra aplicación.
 
-Primordialmente no queriamos que al momento de que el jugador se introdujera en Poképedia se sintiera en un lugar desconocido y dudara de nuestra aplicación, es por eso que decidimos basar nuestro diseño en algunos conceptos ya creados en Pokémon GO, como los colores, formas, tipografias, etc, pero con diferencias ya que tampoco deseamos que nuestra aplicación sea una copia de Pokémon GO.
+Primordialmente no queríamos que al momento que el jugador se introdujera en Poképedia se sintiera en un lugar desconocido y dudara de nuestra aplicación, es por eso que decidimos basar nuestro diseño en algunos conceptos ya creados en Pokémon GO, como los colores, formas, tipografias, etc, pero con diferencias ya que tampoco deseamos que nuestra aplicación sea una copia de Pokémon GO.
 
 # 5.3 Pokémon GO
 
@@ -106,7 +106,7 @@ Primordialmente no queriamos que al momento de que el jugador se introdujera en 
 
 # 5.4 Diseño Visual
 
-Tomando todo lo anterior mencionado, comenzamos a formar nuestras ideas sobre que debería contener nuestro diseño:
+Tomando todo lo anterior mencionado, comenzamos a formar nuestras ideas sobre qué debería contener nuestro diseño:
 
 
 ![figma](src/img_readme/frame_1.png)
@@ -196,11 +196,11 @@ De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos
 ### Lo malo
 
 
-> Seleccionado el pokémon la página no le devuelva a HOME.
+> Seleccionado el Pokémon la página no le devuelva a HOME.
 
 Error que produce Figma al momentos de seleccionar, se puede solucionar al momento de crear la página oficial.
 
-> Más información de los pokémons.
+> Más información de los Pokémons.
 
 > Que no se salga de la sección en la que estaba al momento de seleccionar una card pokémon
 
@@ -209,11 +209,11 @@ Error que produce Figma al momentos de seleccionar, se puede solucionar al momen
 
 > Le agrada el diseño.
 
-> Cumplio con ambos usuarios la tarea asignada por entrevistador.
+> Cumplió con ambos usuarios la tarea asignada por entrevistador.
 
 > El banner es un buen diseño, pues les hace pensar que deben ir a la ciudad o recorrer para atrapar pokémons.
 
-> Usuario menciona que si le ayudaría usar esta aplicación en el juego.
+> Usuario menciona que sí le ayudaría usar esta aplicación en el juego.
 
 > Es intuitiva.
 
@@ -232,25 +232,25 @@ Error que produce Figma al momentos de seleccionar, se puede solucionar al momen
 
 ### Lo malo
 
-> Un unico error que fue que no estaban centrados los textos.
+> Un único error que fue que no estaban centrados los textos.
 
 
 ### Lo bueno
 
 > Le gusta que haya podido usar el buscador.
 
-> Este usuario SI usaria la página par apoder derrotar al pokémon del adversario.
+> Este usuario SÍ usaría la página para poder derrotar al pokémon del adversario.
 
-> Se soluciono el problema con Figma.
+> Se solucionó el problema con Figma.
 
-> La página es intuitiva e intuitiva.
+> La página es intuitiva.
 
 ## Página Final.
 
-![final](src/img_readme/pokepedia-01.jpg)
-![final](src/img_readme/pokepedia_02.jpg)
-![final](src/img_readme/pokepedia_03.jpg)
-![final](src/img_readme/pokepedia_04.jpg)
+![final](src/img_readme/Pokepedia-final1.png)
+![final](src/img_readme/Pokepedia-final2.png)
+![final](src/img_readme/Pokepedia-final3.png)
+![final](src/img_readme/Pokepedia-final4.png)
 
 > Link para poder conocer nuestra aplicación.
 
@@ -258,25 +258,25 @@ Error que produce Figma al momentos de seleccionar, se puede solucionar al momen
 
 # 11. Finalizando.
 
-En resumen se lograron las historias de usuario pues estan en la página aplicadas.
+En resumen se lograron las historias de usuario pues están en la página aplicadas.
 
-La página resulto tener los objetivos claros, es intuitiva y de fácil uso, un jugador de pokemon Go si usaría la página al momento de estar peleando en un gimnasio o con el equipo Rocket, pues se le facilita el seleccionar un Pokemon que debilite al contrincante.
+La página resulto tener los objetivos claros, es intuitiva y de fácil uso, un jugador de Pokémon Go sí usaría la página al momento de estar peleando en un gimnasio o con el equipo Rocket, ya que se le facilita el seleccionar un Pokemon que debilite al contrincante.
 
-Durante el proceso de creación fue bastante motivador y entretenido ir explorando todo lo que se nos solicito
- - Html
+Durante el proceso de creación fue bastante motivador y entretenido ir explorando todo lo que se nos solicitó
+ - HTML
  - CSS
- - JAVASCRIPT
+ - JavaScript
  - Acceder a una data.
 
-Para llegar a todo esto pasamos por dificultades al momento de no saber como llamar la data, no saber utilizar bien css, descubrir nuevas propiedades de javascript, problemas al subir la página a un servidor, usar flexbox, html semántico y un sin fin de tropiesos a los cuales en equipo pudimos lograr superar.
+Para llegar a todo esto pasamos por dificultades al momento de no saber como llamar la data, no saber utilizar bien CSS, descubrir nuevas propiedades de JavaScript, problemas al subir la página a un servidor, usar flexbox, HTML semántico y un sin fin de tropiezos, los cuales en equipo pudimos lograr superar.
 
 ### ¿Qué nos hubiera gustado agregar?
 
-Como equipo pensamos en varias cosas para la página, pero a medida que intentabamos aplicarlas se nos dificultaba más el codigo y debiamos priorizar nuestras historias de usuario.
+Como equipo pensamos en varias cosas para la página, pero a medida que intentabamos aplicarlas se nos dificultaba más el código y decidimos priorizar nuestras historias de usuario.
 
 Estas son algunas cosas que no logramos colocar en la página:
 
-> Implementar sugerencias en el buscador cuando el usuario buscara un pokémon.
+> Implementar sugerencias en el buscador cuando el usuario buscara un Pokémon.
 
 > No logramos colocar las barras de colores al costado de la página, solo quedo la idea en Figma.
 
@@ -284,11 +284,11 @@ Estas son algunas cosas que no logramos colocar en la página:
 
 > Efecto especial en el modal cuando el usuario las seleccionara.
 
-Aun sabiendo estos tropiesos, logramos crear una página web funcional, que realmente le sirve a los jugadore de Pokémon GO, estas tres semanas fuerón arduas y difíciles de tratar, pero también sentimos que fue una gran instancía donde aprendimos variadas cosas y sobre todo nos dimos cuenta que si podiamos lograr nuestros objetivos.
+Aún con los retos que tuvimos, logramos crear una página web funcional, que realmente le sirve a los jugadore de Pokémon GO. Estas tres semanas fueron arduas, pero también sentimos que fue una gran instancia donde aprendimos muchas cosas y sobre todo nos dimos cuenta que sí podíamos lograr nuestros objetivos.
 
-Muchas gracias por leer el readme de Poképedia
+Muchas gracias por leer el readme de Poképedia Go.
 
-## Atrapalos YA!
+## Atrápalos YA!
 
 ![footer](src/img_readme/2roup_185.png)
 
