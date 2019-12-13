@@ -251,6 +251,9 @@ footer {
       flex-direction: column-reverse;
   }
 
+  .pokemon-description {
+    padding: 1%;
+  }
   .modal-content {
     width: 80%;
   }
