@@ -1,4 +1,4 @@
-![Poképedia](src/img_readme/Logo-Pokepedia.png)
+![Poképedia](src/img_readme/readme_header.jpg)
 
 # Índice
 
@@ -73,10 +73,9 @@ Teniendo estas ideas claras comenzamos a investigar más a fondo sobre Pokémon 
 
 Primeros bocetos creados usando papel y lápiz. 
 
-*IMAGENES*
-
-Prototipo de alta fidelidad
- Interfaz de Usuario Figma.
+![imagen](src/img_readme/bajaFidelidad_1.png)
+![imagen](src/img_readme/bajaFidelidad_2.png)
+![imagen](src/img_readme/bajaFidelidad_3.png)
 
 # 5.2 Prototipo de alta fidelidad
 
@@ -104,7 +103,7 @@ Tomando todo lo anterior mencionado, comenzamos a formar nuestras ideas sobre qu
 
 
 
-# 5.5 1er Figma, prototipo de alta fidelidad.
+# 6. 1er Figma, prototipo de alta fidelidad.
 
 De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos.
 
@@ -115,29 +114,180 @@ De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos
 ![figma](src/img_readme/PoképediGO_05.jpg)
 ![figma](src/img_readme/PoképediGO_06.jpg)
 
-# 6. Testeos de usabilidad
+# 7. 1er Testeo de usabilidad
 
-(https://www.loom.com/share/05ac8183dd0442c19fa0ac55843583e1)
+(https://www.loom.com/share/616eb11f84d949918cab348f4f4b70e9)
+
+> Usuario : Gustavo Lopez
+
+- Edad: 21 años
+- Ocupación: Estudiante
+- Hobbie: Gamer
+
+## Feedback:
+
+### Lo malo
+
+
+> Seleccionado el pokémon la página no le devuelva a HOME.
+
+> Demasiada información, el usuario no la leera.
+
+> Que no tenga que presionar "ver mas" en las card de los pokémons.
+
+> El principio de la página es aburrido.
+
+> Que hayan pokémones legendarios
+
+> Horarios de salidas de los pokémon
+
+
+### Lo bueno
+
+> Le agrada el diseño.
+
+> Siente que la página es entendible.
+
+> Facil de usar
+
+> Logra el objetivo que se le da.
+
+> Problema principal es con Figma.
+
+# 8. 2do Figma, prototipo de alta fidelidad.
+
+![figma](src/img_readme/1-Home.png)
+![figma](src/img_readme/1-Elegir_Tipo.png)
+![figma](src/img_readme/1-TIPO_AGUA.png)
+![figma](src/img_readme/1-SQUIRTLE.png)
+![figma](src/img_readme/1-CHARMANDER.png)
+![figma](src/img_readme/1-BULBASAUR.png)
+
+
+
+# 9. 2do Testeo de usabilidad
+
+(https://www.loom.com/share/cb75b61a9969467c89f9a57421cbc3f5)
+
+(https://www.loom.com/share/6a706b772a2443d8a98ce011befe1f6f)
+
+> Usuario : Gustavo Lopez
+
+- Edad: 21 años
+- Ocupación: Estudiante
+- Hobbie: Gamer
+
+> Usuario : Maryelis
+
+- Edad: 32 años
+- Ocupación: Estudiante
+
+## Feedback:
+
+### Lo malo
+
+
+> Seleccionado el pokémon la página no le devuelva a HOME.
+
+Error que produce Figma al momentos de seleccionar, se puede solucionar al momento de crear la página oficial.
+
+> Más información de los pokémons.
+
+> Que no se salga de la sección en la que estaba al momento de seleccionar una card pokémon
+
+
+### Lo bueno
+
+> Le agrada el diseño.
+
+> Cumplio con ambos usuarios la tarea asignada por entrevistador.
+
+> El banner es un buen diseño, pues les hace pensar que deben ir a la ciudad o recorrer para atrapar pokémons.
+
+> Usuario menciona que si le ayudaría usar esta aplicación en el juego.
+
+> Es intuitiva.
+
+# 10. 3er Testeo de usabilidad, página final.
+
+(https://www.loom.com/share/616eb11f84d949918cab348f4f4b70e9)
+
+
+> Usuario : Gustavo Lopez.
+
+- Edad: 21 años.
+- Ocupación: Estudiante.
+- Hobbie: Gamer.
+
+## Feedback:
+
+### Lo malo
+
+> Un unico error que fue que no estaban centrados los textos.
+
+
+### Lo bueno
+
+> Le gusta que haya podido usar el buscador.
+
+> Este usuario SI usaria la página par apoder derrotar al pokémon del adversario.
+
+> Se soluciono el problema con Figma.
+
+> La página es intuitiva e intuitiva.
+
+## Página Final.
+
+![final](src/img_readme/pokepedia-01.jpg)
+![final](src/img_readme/pokepedia_02.jpg)
+![final](src/img_readme/pokepedia_03.jpg)
+![final](src/img_readme/pokepedia_04.jpg)
+
+# 11. Finalizando.
+
+En resumen se lograron las historias de usuario pues estan en la página aplicadas.
+
+La página resulto tener los objetivos claros, es intuitiva y de fácil uso, un jugador de pokemon Go si usaría la página al momento de estar peleando en un gimnasio o con el equipo Rocket, pues se le facilita el seleccionar un Pokemon que debilite al contrincante.
+
+Durante el proceso de creación fue bastante motivador y entretenido ir explorando todo lo que se nos solicito
+ - Html
+ - CSS
+ - JAVASCRIPT
+ - Acceder a una data.
+
+Para llegar a todo esto pasamos por dificultades al momento de no saber como llamar la data, no saber utilizar bien css, descubrir nuevas propiedades de javascript, problemas al subir la página a un servidor, usar flexbox, html semántico y un sin fin de tropiesos a los cuales en equipo pudimos lograr superar.
+
+### ¿Qué nos hubiera gustado agregar?
+
+Como equipo pensamos en varias cosas para la página, pero a medida que intentabamos aplicarlas se nos dificultaba más el codigo y debiamos priorizar nuestras historias de usuario.
+
+Estas son algunas cosas que no logramos colocar en la página:
+
+> Implementar sugerencias en el buscador cuando el usuario buscara un pokémon.
+
+> No logramos colocar las barras de colores al costado de la página, solo quedo la idea en Figma.
+
+> Colocar el diseño exacto que teniamos en Figma en el modal.
+
+> Efecto especial en el modal cuando el usuario las seleccionara.
+
+Aun sabiendo estos tropiesos, logramos crear una página web funcional, que realmente le sirve a los jugadore de Pokémon GO, estas tres semanas fuerón arduas y difíciles de tratar, pero también sentimos que fue una gran instancía donde aprendimos variadas cosas y sobre todo nos dimos cuenta que si podiamos lograr nuestros objetivos.
+
+Muchas gracias por leer el readme de Poképedia
+
+## Equipo de Poképedia
+
+Barbara Di Nizca
+
+[Github](https://github.com/bdiniscia)
+
+Varinea López
+
+[Github](https://github.com/varinea)
+
+
+![footer](src/img_readme/group_185.png)
 
 
 
 
-
-
-
-
-
-
-¿Quiénes son los principales usuarios de producto?
-
-¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-
-¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-
-¿Cuándo utilizan o utilizarían el producto?
-
-Toda tu investigación previa debe tener como resultado todas las Historias de Usuario de tu proyecto.
-
-No hagas los prototipos de alta fidelidad de todas tus Historias. 
-
-Comienza solamente por los que se necesiten para tu Sprint 1 (semana 1 de trabajo). Más pistas en la guía de organización para el proyecto.
