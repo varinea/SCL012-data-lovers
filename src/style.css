@@ -119,7 +119,7 @@ background-size: .65em auto, 100%;
   justify-items: center;
   text-align: center;
   border-radius: 20px, ;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Raleway', sans-serif;
   box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19); 
 }
 
@@ -151,7 +151,7 @@ background-size: .65em auto, 100%;
   font-family: 'Raleway', sans-serif;
   margin: auto;
   padding: 20px;
-  width: 30%;
+  width: 35%;
   border-radius: 20px; 
   box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
   border: 1px solid #888;
@@ -162,9 +162,13 @@ background-size: .65em auto, 100%;
 /*Texto de las descripciones en el modal */
 
 .pokemon-description {
-  text-align: left;
-  border-radius: 20px;
+  text-align: center;
   font-family: 'Raleway', sans-serif;
+  padding: 10%;
+}
+
+.pokemon-description p {
+  text-align: left;
 }
 
 /* X de cerrar el modal*/
@@ -219,24 +223,26 @@ footer {
     filter: invert(11%) sepia(2%) saturate(9%) hue-rotate(332deg) brightness(90%) contrast(85%);
   }
 
-  .modal-p {
-    font-weight: bolder;
+  h3 {
+    color: #606060;
+    font-size: 1.5em;
+    text-align: center;
   }
 
 
 .modal-p {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
   line-height : 30px;
+  font-weight: bold;
+  color: #606060;
 
 }
 
 
   @media screen and (max-width: 768px) {
 
-<<<<<<< HEAD
-=======
 
   #welcome {
       flex-direction: column-reverse;
@@ -246,7 +252,6 @@ footer {
     width: 80%;
   }
 
->>>>>>> f08db9ea0bd093e9e69d91f0ad163e55b3742c57
   .imgLogo {
     display: flex;
     -webkit-display: flex;
