@@ -103,7 +103,7 @@ Primordialmente no queriamos que al momento de que el jugador se introdujera en 
 
 # 5.4 Diseño Visual
 
-Tomando todo lo anterior mencionado, comenzamos a forma nuestro ideas sobre que deberia contener nuestro diseño:
+Tomando todo lo anterior mencionado, comenzamos a formar nuestras ideas sobre que debería contener nuestro diseño:
 
 
 ![figma](src/img_readme/frame_1.png)
@@ -114,6 +114,8 @@ Tomando todo lo anterior mencionado, comenzamos a forma nuestro ideas sobre que 
 
 # 5.5 1er Figma, prototipo de alta fidelidad.
 
+De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos.
+
 ![figma](src/img_readme/PoképediGO_01.jpg)
 ![figma](src/img_readme/PoképediGO_02.jpg)
 ![figma](src/img_readme/PoképediGO_03.jpg)
@@ -121,39 +123,10 @@ Tomando todo lo anterior mencionado, comenzamos a forma nuestro ideas sobre que 
 ![figma](src/img_readme/PoképediGO_05.jpg)
 ![figma](src/img_readme/PoképediGO_06.jpg)
 
+# 6. Testeos de usabilidad
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Testeos de usabilidad
-
-Durante el reto deberás hacer tests de usabilidad con distintos usuarios, y en base a los resultados, deberás iterar tus diseños. Cuéntanos qué problemas de usabilidad detectaste a través de los tests y cómo los mejoraste en tu propuesta final.
-
-
-
-
-
-
-
-
-
-
-El equipo Poképedia se organizo atravez de Trello, lugar que ambas colaboradoras visitabamos
 
 
 
