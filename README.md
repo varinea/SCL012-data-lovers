@@ -62,7 +62,6 @@ Para este extenso proyecto el equipo Poképedia se organizo por metas diarias, d
 
 # 5. Desarrollo de página web
 
-
 Para lograr visualizar la app comenzamos con ver cuales eran nuestro conocimientos previos sobre el proyecto los cuales eran:
 
 ![imagen](src/img_readme/Conocimientos_Previos.jpg)
@@ -73,8 +72,6 @@ Teniendo estas ideas claras comenzamos a investigar más a fondo sobre Pokémon 
 # 5.1 Prototipo de baja fidelidad
 
 Primeros bocetos creados usando papel y lápiz. 
-
-
 
 *IMAGENES*
 
@@ -89,16 +86,11 @@ Primordialmente no queriamos que al momento de que el jugador se introdujera en 
 
 # 5.3 Pokémon GO
 
-![Poképedia](src/img_readme/poke_0.png)
 ![Poképedia](src/img_readme/poke_1.png)
 ![Poképedia](src/img_readme/poke_2.png)
-![Poképedia](src/img_readme/poke_3.png)
-![Poképedia](src/img_readme/poke_4.png)
 ![Poképedia](src/img_readme/poke_5.png)
 ![Poképedia](src/img_readme/poke_6.png)
-![Poképedia](src/img_readme/poke_7.png)
 ![Poképedia](src/img_readme/poke_8.png)
-
 
 
 # 5.4 Diseño Visual
@@ -125,6 +117,7 @@ De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos
 
 # 6. Testeos de usabilidad
 
+(https://www.loom.com/share/05ac8183dd0442c19fa0ac55843583e1)
 
 
 
@@ -132,7 +125,7 @@ De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos
 
 
 
-Basamos nuestro diseño de página observando la aplicación de Pokemon Go, queriamos que cuando el usuario navege en nuestra aplicacioón le recuerde a Pokemon Go.  
+
 
 
 ¿Quiénes son los principales usuarios de producto?
