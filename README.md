@@ -109,9 +109,9 @@ Primordialmente no queríamos que al momento que el jugador se introdujera en Po
 Tomando todo lo anterior mencionado, comenzamos a formar nuestras ideas sobre qué debería contener nuestro diseño:
 
 
-![figma](src/img_readme/frame_1.png)
-![figma](src/img_readme/frame_2.png)
-![figma](src/img_readme/frame_3.png)
+![pokemongo](src/img_readme/frame_1.png)
+![pokemongo](src/img_readme/frame_2.png)
+![pokemongo](src/img_readme/frame_3.png)
 
 
 # 6. 1er Figma, prototipo de alta fidelidad.
@@ -124,6 +124,13 @@ De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos
 ![figma](src/img_readme/PoképediGO_04.jpg)
 ![figma](src/img_readme/PoképediGO_05.jpg)
 ![figma](src/img_readme/PoképediGO_06.jpg)
+
+## Version Android
+
+![Figma](src/img_readme/cell_1.png)
+![Figma](src/img_readme/cell_2.png)
+![Figma](src/img_readme/cell_3.png)
+![Figma](src/img_readme/cell_4.png)
 
 # 7. 1er Testeo de usabilidad
 
@@ -173,6 +180,14 @@ De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos
 ![figma](src/img_readme/1-SQUIRTLE.png)
 ![figma](src/img_readme/1-CHARMANDER.png)
 ![figma](src/img_readme/1-BULBASAUR.png)
+
+
+## Version Android
+
+![Figma](src/img_readme/cell_5.png)
+![Figma](src/img_readme/cell_6.png)
+![Figma](src/img_readme/cell_7.png)
+![Figma](src/img_readme/cell_8.png)
 
 # 9. 2do Testeo de usabilidad
 
@@ -276,7 +291,9 @@ Como equipo pensamos en varias cosas para la página, pero a medida que intentab
 
 Estas son algunas cosas que no logramos colocar en la página:
 
-> Implementar sugerencias en el buscador cuando el usuario buscara un Pokémon.
+> Implementar sugerencias en el buscador cuando el usuario quisiera encontrar un Pokémon de forma rápida.
+
+> Agregar evoluciones previas y próximas a los pokémon en el modal.
 
 > No logramos colocar las barras de colores al costado de la página, solo quedo la idea en Figma.
 
