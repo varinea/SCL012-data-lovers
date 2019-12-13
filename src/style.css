@@ -78,16 +78,27 @@ background-size: .65em auto, 100%;
   text-align: center;
 }
 
-.charizard {
-  margin: 0% 0% 0% 40%;
-  padding: 5%;
+#welcome {
+  border: 1px solid black;
+  justify-items: center;
+  border: none;
   display: flex;
 }
 
+.charizard {
+  padding: 5% 5% 5% 1%;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+}
+
 .boxText2 {
-  margin: -55% 45% 0% 2.5%;
-  padding: 10%;
+  padding: 5% 1% 5% 10%;
   text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 40%
 } 
 
 .datalover {
@@ -96,11 +107,8 @@ background-size: .65em auto, 100%;
 }
 
 #contentOfCards {
-  border: 1px solid black;
-  justify-items: center;
-  border: none;
+  text-align: center;
 }
-
 /* Estilo de cada carta de Pokémon */
 .card-style {
   display: inline-block;
@@ -201,6 +209,20 @@ footer {
     position: relative;
   }
 
+  .color-Icon {
+    filter: invert(57%) sepia(9%) saturate(11%) hue-rotate(358deg) brightness(94%) contrast(89%);
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .color-Icon:hover {
+    filter: invert(11%) sepia(2%) saturate(9%) hue-rotate(332deg) brightness(90%) contrast(85%);
+  }
+
+  .modal-p {
+    font-weight: bolder;
+  }
+
 
 .modal-p {
   font-family: 'Raleway', sans-serif;
@@ -213,9 +235,21 @@ footer {
 
   @media screen and (max-width: 768px) {
 
+<<<<<<< HEAD
+=======
+
+  #welcome {
+      flex-direction: column-reverse;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+
+>>>>>>> f08db9ea0bd093e9e69d91f0ad163e55b3742c57
   .imgLogo {
     display: flex;
-    -webkit-display: block;
+    -webkit-display: flex;
     -moz-display: flex;
     -ms--display: flex;
     justify-content: center;
@@ -224,7 +258,7 @@ footer {
     -webkit-width: 300px;
   } 
 
- .charizard {
+ .charizard, .img-Chari {
    margin: 0%;
    padding: 0%;
    width: 100%;

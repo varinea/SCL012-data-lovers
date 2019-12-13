@@ -13,83 +13,84 @@
 <body>
   <!--header // Banner // Logo-->
   <section id="banner">
-    <a title="Home" class="imgLogo" href="index.html"><img src="img/logo.png" alt="Logo Pokepedia"></a>
-  </section>
-
-  <div class="container"> 
-    <div class="selectArea"> 
-      <!--buscador por tipo -->
-      <p class="text"> Filtrar por: </p> 
-      <select id="selectType"  class="droplists">
-
-        <option value="">Tipo de Pokémon:</option>
-        <option value="Water">Agua</option>
-        <option value="Fire">Fuego</option>
-        <option value="Normal">Normal</option>
-        <option value="Grass">Planta</option>
-        <option value="Electric">Eléctrico</option>
-        <option value="Ice">Hielo</option>
-        <option value="Fighting">Pelea</option>
-        <option value="Poison">Veneno</option>
-        <option value="Ground">Tierra</option>
-        <option value="Flying">Volador</option>
-        <option value="Psychic">Psíquicos</option>
-        <option value="Bug">Bicho</option>
-        <option value="Rock">Roca</option>
-        <option value="Ghost">Fantasma</option>
-        <option value="Dragon">Dragón</option>
-      </select>
-
-      <!--buscador por debilidad -->
-      <select id="selectWeak" class="droplists">
-        <option value="">Debilidad de tu Pokémon:</option>
-        <option value="Water">Agua</option>
-        <option value="Fire">Fuego</option>
-        <option value="Grass">Planta</option>
-        <option value="Electric">Eléctrico</option>
-        <option value="Ice">Hielo</option>
-        <option value="Fighting">Pelea</option>
-        <option value="Poison">Veneno</option>
-        <option value="Ground">Tierra</option>
-        <option value="Flying">Volador</option>
-        <option value="Psychic">Psíquicos</option>
-        <option value="Bug">Bicho</option>
-        <option value="Rock">Roca</option>
-        <option value="Ghost">Fantasma</option>
-        <option value="Dragon">Dragón</option>
-        <option value="Dark">Siniéstro</option>
-        <option value="Steel">Metal</option>
-        <option value="Fairy">Hada</option>
-      </select>
-
-      <input type="text" id="searchBar" class="searchClass" placeholder="Busca por nombre tu Pokémon"></input>
-
-      <section id="contentOfCards">
-      
-        <!--img Cahrizar -->
-        <div class="charizard">
-          <img src="img/charizard.png">
-        </div>
-
-        <!--Texto Body -->
-        <div id="boxText" class="boxText2">
-          <h1>Poképedia GO</h1>
-          <p> Es una entretenida app dedicada especialmente para jugadores experimentados de Pokémon GO. </p>
-          <h2>¿De qué trata?</h2>
-          <p> Aquí puedes encontrar todo lo necesario para hacer más agradable tu aventura en Pokémon Go,
-            puedes buscar desde la debilidad del Pokémon de tu contrincante hasta los datos de tu Pokémon favorito. </p>
-          <h2>¡Explora y encuentra!</h2>
-        </div>
-      </section>
-    </div>
+      <a title="Home" class="imgLogo" href="index.html"><img class="imgLogo" src="img/logo.png" alt="Logo Pokepedia"></a>
+    </section>
   
 
-  <footer id="footer">
-    <div style="font-size: 35px;">
-      <i class="fab fa-instagram"><span class="font-size"></span><a href=" https://www.instagram.com/pokemongoapp/"></a></i>
-      <i class="fab fa-twitter"><span class="font-size"></span><a href="https://twitter.com/PokemonGoApp"></a></i>
-      <i class="fab fa-facebook-square"><span class="font-size"></span> <a href="https://www.facebook.com/PokemonGO/"></a></i>
-    </div>
+    <div class="container"> 
+      <div class="selectArea"> 
+        <!--buscador por tipo -->
+        <p class="text"> Filtrar por: </p> 
+        <select id="selectType"  class="droplists">
+  
+          <option value="">Tipo de Pokémon:</option>
+          <option value="Water">Agua</option>
+          <option value="Fire">Fuego</option>
+          <option value="Normal">Normal</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Eléctrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Pelea</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psíquicos</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragón</option>
+        </select>
+  
+        <!--buscador por debilidad -->
+        <select id="selectWeak" class="droplists">
+          <option value="">Debilidad de tu Pokémon:</option>
+          <option value="Water">Agua</option>
+          <option value="Fire">Fuego</option>
+          <option value="Grass">Planta</option>
+          <option value="Electric">Eléctrico</option>
+          <option value="Ice">Hielo</option>
+          <option value="Fighting">Pelea</option>
+          <option value="Poison">Veneno</option>
+          <option value="Ground">Tierra</option>
+          <option value="Flying">Volador</option>
+          <option value="Psychic">Psíquicos</option>
+          <option value="Bug">Bicho</option>
+          <option value="Rock">Roca</option>
+          <option value="Ghost">Fantasma</option>
+          <option value="Dragon">Dragón</option>
+          <option value="Dark">Siniéstro</option>
+          <option value="Steel">Metal</option>
+          <option value="Fairy">Hada</option>
+        </select>
+  
+        <input type="text" id="searchBar" class="searchClass" placeholder="Busca por nombre tu Pokémon"></input>
+      </div>
+  
+        <section id="contentOfCards"></section>
+        <section id="welcome">
+          <!--Texto Body -->
+          <div id="boxText" class="boxText2">
+            <h1>Poképedia GO</h1>
+            <p> Es una entretenida app dedicada especialmente para jugadores experimentados de Pokémon GO. </p>
+            <h2>¿De qué trata?</h2>
+            <p> Aquí puedes encontrar todo lo necesario para hacer más agradable tu aventura en Pokémon Go,
+              puedes buscar desde la debilidad del Pokémon de tu contrincante hasta los datos de tu Pokémon favorito. </p>
+            <h2>¡Explora y encuentra!</h2>
+          </div>
+  
+          <!--img Cahrizar -->
+          <div class="charizard">
+            <img class="img-Chari" src="img/charizard.png">
+          </div>
+        </section>
+    
+  
+    <footer id="footer">
+      <div style="font-size: 35px;">
+        <a href=" https://www.instagram.com/pokemongoapp/" target="_blank" class="color-Icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/PokemonGoApp" target="_blank" class="color-Icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/PokemonGO/" target="_blank" class="color-Icon"><i class="fab fa-facebook-square"></i></a>
+      </div>
 
     <img src="img/pikachu.png" class="pikachu">
 

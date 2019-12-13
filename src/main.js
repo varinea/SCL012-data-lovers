@@ -32,6 +32,7 @@ selectFilterByType.addEventListener('change', () => {
   while (divCard.hasChildNodes()) {
     divCard.removeChild(divCard.firstChild);
   }
+  document.getElementById('welcome').innerHTML = '';
 
   // Imprime por separado las cartas
   for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
@@ -114,6 +115,7 @@ selectFilterByWeak.addEventListener('change', () => {
   while (divCard.hasChildNodes()) {
     divCard.removeChild(divCard.firstChild);
   }
+  document.getElementById('welcome').innerHTML = '';
 
   // Imprime por separado las cartas
   for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
@@ -197,6 +199,7 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
     while (divCard.hasChildNodes()) {
       divCard.removeChild(divCard.firstChild);
     }
+    document.getElementById('welcome').innerHTML = '';
 
     // Imprime por separado las cartas
     for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
@@ -222,13 +225,13 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
                                 <img src='${stringPokeImg[i]}'>
                                 <h3>${stringPokeName[i]}</h3>
                                 <p><span class='modal-p'>TIPO: </span>${stringPokeType[i]}</p> 
-                                <p><span class='modal-p'>ALTURA: ${stringPokeHeight[i]}</p>
-                                <p><span class='modal-p'>PESO: ${stringPokeWeight[i]}</p>
-                                <p><span class='modal-p'>CANDY: ${stringPokeCandy[i]}</p>
-                                <p>Nº DE CANDIES PARA EVOLUCIONAR: ${stringPokeCandyCount[i]}</p>
-                                <p>HUEVO: ${stringPokeEgg[i]}</p>
-                                <p class='modal-p'>HORA DE SPAWNS: ${stringPokeSpawnTime[i]}</p>
-                                <p class='modal-p'>DEBILIDADES: ${stringPokeWeaknesses[i]}</p>
+                                <p><span class='modal-p'>ALTURA: </span>${stringPokeHeight[i]}</p>
+                                <p><span class='modal-p'>PESO: </span>${stringPokeWeight[i]}</p>
+                                <p><span class='modal-p'>CANDY: </span>${stringPokeCandy[i]}</p>
+                                <p><span class='modal-p'>Nº DE CANDIES PARA EVOLUCIONAR: </span>${stringPokeCandyCount[i]}</p>
+                                <p><span class='modal-p'>HUEVO: </span>${stringPokeEgg[i]}</p>
+                                <p><span class='modal-p'>HORA DE SPAWNS: </span>${stringPokeSpawnTime[i]}</p>
+                                <p><span class='modal-p'>DEBILIDADES: </span>${stringPokeWeaknesses[i]}</p>
                                 </div>`;
       modal.appendChild(modalContent);
 
