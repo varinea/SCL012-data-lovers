@@ -151,7 +151,7 @@ background-size: .65em auto, 100%;
   font-family: 'Raleway', sans-serif;
   margin: auto;
   padding: 20px;
-  width: 30%;
+  width: 35%;
   border-radius: 20px; 
   box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
   border: 1px solid #888;
@@ -165,9 +165,13 @@ background-size: .65em auto, 100%;
 }
 
 .pokemon-description {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10%;
+}
+
+.pokemon-description p {
   text-align: left;
-  border-radius: 20px;
-  font-family: 'Raleway', sans-serif;
 }
 
 /* X de cerrar el modal*/
@@ -224,7 +228,15 @@ footer {
 
   .modal-p {
     font-weight: bolder;
+    color: #606060;
   }
+
+  h3 {
+    color: #606060;
+    font-size: 1.4em;
+    text-align: center;
+  }
+
 
 
   @media screen and (max-width: 768px) {
