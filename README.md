@@ -14,7 +14,6 @@
 * [10.3er Testeo de usabilidad, página final.](#10-3erTesteo)
 * [11. Finalizando.](#11-Finalizando)
 
-
 # 1. Presentación
 
 ## ¿Qué es Pokémon GO?
@@ -36,12 +35,11 @@ Explora la página y ¡descubre!
 
 Para este proyecto vivimos la experiencia de crear una página web desde cero, logrando visualizar un conjunto de datos que se adecúe a lo que nuestros usuarios necesitan.
 
- En nuestra página el usuario podrá:
+En nuestra página el usuario podrá:
 
  - Visualizar 
  - Filtrar 
  - Ordenar
-
 
 # 3. Historias Usuarios
 
