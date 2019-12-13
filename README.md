@@ -62,7 +62,6 @@ Para este extenso proyecto el equipo Poképedia se organizo por metas diarias, d
 
 # 5. Desarrollo de página web
 
-## Prototipo de baja fidelidad
 
 Para lograr visualizar la app comenzamos con ver cuales eran nuestro conocimientos previos sobre el proyecto los cuales eran:
 
@@ -82,6 +81,32 @@ Primeros bocetos creados usando papel y lápiz.
 Prototipo de alta fidelidad
  Interfaz de Usuario Figma.
 
+## Prototipo de alta fidelidad
+
+Consultando y testeando nuestro prototipo de baja fidelidad a diferentes personas que habían utilizado Pokémon GO comenzamos a visualizar como podría ser nuestra aplicación.
+
+Primordialmente no queriamos que al momento de que el jugador se introdujera en Poképedia se sintiera en un lugar desconocido y dudara de nuestra aplicación, es por eso que decidimos basar nuestro diseño en algunos conceptos ya creados en Pokémon GO, como los colores, formas, tipografias, etc, pero con diferencias ya que tampoco deseamos que nuestra aplicación sea una copia de Pokémon GO.
+
+POKÉMON GO
+
+
+![Poképedia](src/img_readme/poke_0.png)
+![Poképedia](src/img_readme/poke_1.png)
+![Poképedia](src/img_readme/poke_2.png)
+![Poképedia](src/img_readme/poke_3.png)
+![Poképedia](src/img_readme/poke_4.png)
+![Poképedia](src/img_readme/poke_5.png)
+![Poképedia](src/img_readme/poke_6.png)
+![Poképedia](src/img_readme/poke_7.png)
+![Poképedia](src/img_readme/poke_8.png)
+
+
+
+-------------------------------------------
+
+
+
+
 ![figma](src/img_readme/PoképediGO_01.jpg)
 ![figma](src/img_readme/PoképediGO_02.jpg)
 ![figma](src/img_readme/PoképediGO_03.jpg)
@@ -90,7 +115,8 @@ Prototipo de alta fidelidad
 ![figma](src/img_readme/PoképediGO_06.jpg)
 
 
--------------------------------------------
+
+
 
 
 El diseño debe representar el ideal de tu solución. Digamos que es lo que desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu diseño debe seguir los fundamentos de visual design.
