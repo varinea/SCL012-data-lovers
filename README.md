@@ -2,6 +2,18 @@
 
 # Índice
 
+* [1. Presentación](#1-presentación)
+* [2. Resumen del proyecto](#2-resumen)
+* [3. 3. Historias Usuarios](#3-historias)
+* [4. Organización del Proyecto](#4-Organización)
+* [5. Desarrollo de página web](#5-Desarrollo)
+* [6. 1er Figma, prototipo de alta fidelidad.](#6-1erFigma)
+* [7. 1er Testeo de usabilidad](#7-1erTesteo)
+* [8. 2do Figma, prototipo de alta fidelidad.](#8-2doFigma)
+* [9. 2do Testeo de usabilidad](#9-2doTesteo)
+* [10.3er Testeo de usabilidad, página final.](#10-3erTesteo)
+* [11. Finalizando.](#11-Finalizando)
+
 
 # 1. Presentación
 
@@ -102,7 +114,6 @@ Tomando todo lo anterior mencionado, comenzamos a formar nuestras ideas sobre qu
 ![figma](src/img_readme/frame_3.png)
 
 
-
 # 6. 1er Figma, prototipo de alta fidelidad.
 
 De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos.
@@ -162,8 +173,6 @@ De esta forma creamos nuestro primer prototipo para poder hacer nuestros testeos
 ![figma](src/img_readme/1-SQUIRTLE.png)
 ![figma](src/img_readme/1-CHARMANDER.png)
 ![figma](src/img_readme/1-BULBASAUR.png)
-
-
 
 # 9. 2do Testeo de usabilidad
 
@@ -279,16 +288,7 @@ Aun sabiendo estos tropiesos, logramos crear una página web funcional, que real
 
 Muchas gracias por leer el readme de Poképedia
 
-## Equipo de Poképedia
-
-Barbara Di Nizca
-
-[Github](https://github.com/bdiniscia)
-
-Varinea López
-
-[Github](https://github.com/varinea)
-
+## Atrapalos YA!
 
 ![footer](src/img_readme/2roup_185.png)
 
