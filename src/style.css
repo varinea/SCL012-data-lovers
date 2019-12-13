@@ -229,6 +229,7 @@ footer {
 
   @media screen and (max-width: 768px) {
 
+
   #welcome {
       flex-direction: column-reverse;
   }
@@ -236,7 +237,6 @@ footer {
   .modal-content {
     width: 80%;
   }
-
 
   .imgLogo {
     display: flex;

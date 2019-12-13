@@ -7,15 +7,17 @@
 
 Poképedia es una entretenida app dedicada especialmente para jugadores de Pokémon GO. 
 
-Un lugar donde podrás encontrar toda la ayuda necesaria para poder ser el mejor maestro Pokémon, queremos hacer que tu experiencia en Pokémon Go sea más entretenida, aquí nos encargamos de darte tips y pistas para poder descubrir el Pokémon que quieres atrapar, también puedes saber las debilidades de tu contrincante y muchas cosas más.
+Un lugar donde podrás encontrar toda la ayuda necesaria para poder ser el mejor maestro Pokémon, para nosotras es importante hacer que tu experiencia en Pokémon Go sea más entretenida, en nuestra aplicación nos encargaremos de darte tips y pistas para poder descubrir el Pokémon que quieres atrapar, también puedes saber las debilidades de tu contrincante y muchas cosas más.
 
 Explora la página y descubre!
 
 ## 2. Resumen del proyecto
 
-Poképedia es el proyecto DataLover donde construimos una página web basandonos en lo que nuestras historias de usuario solicitaban. 
+Poképedia es el proyecto DataLover donde construimos una página web basándonos en historia de usuarios. 
 
-Dentro de los diferentes temas que nos entregaron, decidimos seleccionar Pokémon GO, basamos nuestro diseño de página en le aplicacion del tema y como objetivo principal, dentro de esta app el usuario podrá ver lo que desee filtrar, puede ser diferentes temas tales como: 
+Dentro de los diferentes temas que nos entregaba la data, decidimos seleccionar Pokémon GO,
+
+ basamos nuestro diseño de página en la aplicacion del tema y como objetivo principal dentro de esta app el usuario podrá ver lo que desee filtrar, puede ser diferentes temas tales como: 
 
 - Filtrar por tipo de Pokémon
 - Filtrar por habilidades
