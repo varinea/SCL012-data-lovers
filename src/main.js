@@ -123,9 +123,9 @@ selectFilterByWeak.addEventListener('change', () => {
     card.classList.add('card-style');
     card.innerHTML = `<img src=' ${stringPokeImg[i]}'>
                       <h3>${stringPokeName[i]}</h3>
-                      <p>TIPO: ${stringPokeType[i]}</p>
-                      <p>ALTURA: ${stringPokeHeight[i]}</p>
-                      <p>PESO: ${stringPokeWeight[i]}</p>
+                      <p><span class='modal-p'>TIPO: </span>${stringPokeType[i]}</p>
+                      <p><span class='modal-p'>ALTURA: </span>${stringPokeHeight[i]}</p>
+                      <p><span class='modal-p'>PESO: </span>${stringPokeWeight[i]}</p>
                       <p class='see-more'>Ver más</p>`;
     document.getElementById('contentOfCards').appendChild(card);
 
@@ -207,9 +207,9 @@ document.getElementById('searchBar').addEventListener('keydown', (e) => {
       card.classList.add('card-style');
       card.innerHTML = `<img src=' ${stringPokeImg[i]}'>
                         <h3>${stringPokeName[i]}</h3>
-                        <p>TIPO: ${stringPokeType[i]}</p>
-                        <p>ALTURA: ${stringPokeHeight[i]}</p>
-                        <p>PESO: ${stringPokeWeight[i]}</p>
+                        <p><span class='modal-p'>TIPO: </span>${stringPokeType[i]}</p>
+                        <p><span class='modal-p'>ALTURA: </span>${stringPokeHeight[i]}</p>
+                        <p><span class='modal-p'>PESO: </span>${stringPokeWeight[i]}</p>
                         <p class='see-more'>Ver más</p>`;
       document.getElementById('contentOfCards').appendChild(card);
 

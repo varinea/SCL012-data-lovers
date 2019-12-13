@@ -223,23 +223,20 @@ footer {
     filter: invert(11%) sepia(2%) saturate(9%) hue-rotate(332deg) brightness(90%) contrast(85%);
   }
 
-  .modal-p {
-    font-weight: bolder;
-    color: #606060;
-  }
-
   h3 {
     color: #606060;
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-align: center;
   }
 
 
 .modal-p {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
   line-height : 30px;
+  font-weight: bold;
+  color: #606060;
 
 }
 
