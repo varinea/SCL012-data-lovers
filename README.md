@@ -243,6 +243,10 @@ Error que produce Figma al momentos de seleccionar, se puede solucionar al momen
 ![final](src/img_readme/pokepedia_03.jpg)
 ![final](src/img_readme/pokepedia_04.jpg)
 
+> Link para poder conocer nuestra aplicación.
+
+[PokePedia Go!](https://varinea.github.io/SCL012-data-lovers/src/index.html)
+
 # 11. Finalizando.
 
 En resumen se lograron las historias de usuario pues estan en la página aplicadas.
@@ -286,7 +290,7 @@ Varinea López
 [Github](https://github.com/varinea)
 
 
-![footer](src/img_readme/group_185.png)
+![footer](src/img_readme/2roup_185.png)
 
 
 
