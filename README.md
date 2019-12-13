@@ -26,7 +26,7 @@ Pokémon GO es un videojuego de realidad aumentada basado en la localización de
 Poképedia es una **ayuda** para cualquier jugador de Pokémon GO,
 aquí podrás encontrar muchas cosas necesaria para poder ser el mejor maestro Pokémon. 
 
-Para el equipo de Pokepedia Go es importante hacer que tu experiencia como jugador sea más entretenida, nos encargaremos de darte tips y pistas para poder descubrir el Pokémon que quieres atrapar, también puedes saber las debilidades de los pokémon de tu contrincante y muchas cosas más.
+Para el equipo de Poképedia Go es importante hacer que tu experiencia como jugador sea más entretenida, nos encargaremos de darte tips y pistas para poder descubrir el Pokémon que quieres atrapar, también puedes saber las debilidades de los pokémon de tu contrincante y muchas cosas más.
 
 Para poder utilizar esta aplicación debes tener una cuenta registrada en el juego y tener un mínimo de experiencia capturando tus pokémons.
 
@@ -51,7 +51,7 @@ Dentro de los diferentes temas que nos entregaba la data, decidimos seleccionar 
 
 ### Creando nuestras Historias de Usuario
 
-En esta ocasión se nos pidio crear tres historias de usuario las que serían claves para la creación de nuestra página, basándonos en nuestras propias experiencias con Pokémon GO, creamos tres historias de usuarios donde lo primordial estaba en **derrotar gimnasios y al equipo rocket** (Evento de Pokémon Go implementado este año).-
+En esta ocasión se nos pidió crear tres historias de usuario las que serían claves para la creación de nuestra página, basándonos en nuestras propias experiencias con Pokémon GO, creamos tres historias de usuarios donde lo primordial estaba en **derrotar gimnasios y al equipo rocket** (Evento de Pokémon Go implementado este año).-
 
 ### **1era Historia de Usuario**
 
