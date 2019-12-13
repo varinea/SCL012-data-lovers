@@ -49,7 +49,7 @@ Yo COMO usuaria QUISIERA saber que pokémon hay de cada tipo PARA tener mayor va
 
 Yo COMO usuaria de la app QUISIERA saber cuáles Pokémons son débiles ante mi Pokémon PARA poder derrotarlos.
 
-### **3era Historia de Usuario¨** 
+### **3era Historia de Usuario** 
 
 Yo COMO usuaria QUISIERA saber cuándo es más probable que salga cierto pokémon PARA atraparlo.
 
@@ -68,9 +68,9 @@ Para lograr visualizar la app comenzamos con ver cuales eran nuestro conocimient
 ![imagen](src/img_readme/Conocimientos_Previos.jpg)
 
 
-Teniendo estas ideas claras comenzamos a investigar más a fondo sobre Pokémon Go, observamos los colores de las página, su trato con el usuario y las animaciones, diseños, el diseño de los pokémon, etc.
+Teniendo estas ideas claras comenzamos a investigar más a fondo sobre Pokémon Go, observamos los colores de las página, animaciones, diseños, estilo de los pokémon, etc.
 
-## Prototipo de baja fidelidad
+# 5.1 Prototipo de baja fidelidad
 
 Primeros bocetos creados usando papel y lápiz. 
 
@@ -81,14 +81,13 @@ Primeros bocetos creados usando papel y lápiz.
 Prototipo de alta fidelidad
  Interfaz de Usuario Figma.
 
-## Prototipo de alta fidelidad
+# 5.2 Prototipo de alta fidelidad
 
 Consultando y testeando nuestro prototipo de baja fidelidad a diferentes personas que habían utilizado Pokémon GO comenzamos a visualizar como podría ser nuestra aplicación.
 
 Primordialmente no queriamos que al momento de que el jugador se introdujera en Poképedia se sintiera en un lugar desconocido y dudara de nuestra aplicación, es por eso que decidimos basar nuestro diseño en algunos conceptos ya creados en Pokémon GO, como los colores, formas, tipografias, etc, pero con diferencias ya que tampoco deseamos que nuestra aplicación sea una copia de Pokémon GO.
 
-POKÉMON GO
-
+# 5.3 Pokémon GO
 
 ![Poképedia](src/img_readme/poke_0.png)
 ![Poképedia](src/img_readme/poke_1.png)
@@ -102,10 +101,18 @@ POKÉMON GO
 
 
 
--------------------------------------------
+# 5.4 Diseño Visual
+
+Tomando todo lo anterior mencionado, comenzamos a forma nuestro ideas sobre que deberia contener nuestro diseño:
+
+
+![figma](src/img_readme/frame_1.png)
+![figma](src/img_readme/frame_2.png)
+![figma](src/img_readme/frame_3.png)
 
 
 
+# 5.5 1er Figma, prototipo de alta fidelidad.
 
 ![figma](src/img_readme/PoképediGO_01.jpg)
 ![figma](src/img_readme/PoképediGO_02.jpg)
@@ -119,7 +126,17 @@ POKÉMON GO
 
 
 
-El diseño debe representar el ideal de tu solución. Digamos que es lo que desearías implementar si tuvieras tiempo ilimitado para trabajar. Además, tu diseño debe seguir los fundamentos de visual design.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
