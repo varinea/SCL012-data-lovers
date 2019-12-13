@@ -7,7 +7,7 @@
   background-size: auto,							cover;
   padding: 9% 0% 10% 0%;
   text-align: center;
-  box-sizing: border-box;
+  
   /* solucionar para que quede arriba */
 }
 
@@ -152,9 +152,6 @@ background-size: .65em auto, 100%;
 }
 
 /*Texto de las descripciones en el modal */
-.pokemon-img {
-  align-content: center;
-}
 
 .pokemon-description {
   text-align: left;
@@ -205,14 +202,17 @@ footer {
   }
 
 
+.modal-p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  line-height : 30px;
+
+}
+
+
   @media screen and (max-width: 768px) {
 
-<<<<<<< HEAD
-  #banner .imgLogo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-=======
   .imgLogo {
     display: flex;
     -webkit-display: block;
@@ -222,7 +222,6 @@ footer {
     width: 100%;
     height: 100%;
     -webkit-width: 300px;
->>>>>>> 1bc8eb1cd8f2988edad4f5a5f1d58bf8e5fee1bf
   } 
 
  .charizard {
@@ -248,15 +247,14 @@ footer {
     margin: 0%;
     flex-direction: column;
     justify-content: center;
-<<<<<<< HEAD
-=======
   }
 
   .searchClass {
     width: 250px;
     margin-top: 20px;
->>>>>>> 1bc8eb1cd8f2988edad4f5a5f1d58bf8e5fee1bf
   }
+
+  
 
 }
 
