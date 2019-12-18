@@ -10,12 +10,12 @@ const selectFilterByType = document.getElementById('selectType');
 // Select para filtrar por TIPO
 selectFilterByType.addEventListener('change', () => {
 
-  document.getElementById('selectWeak').value = ''; // Resetea el otro select para que vuelta a su valor original
-  document.getElementById('searchBar').value = ''; // Resetea el input para que se vacíe
+  document.getElementById('selectWeak').value = ''; // Resetea el otro select para que vuelta a su valor original.
+  document.getElementById('searchBar').value = ''; // Resetea el input para que se vacíe.
 
-  const typeDroplist = document.getElementById('selectType').value; // Valor del droplist de tipo
+  const typeDroplist = document.getElementById('selectType').value; // Valor del droplist de tipo.
 
-  // Todas las variables que aparecen en las tarjetas de cada Pokemón
+  // Todas las variables que aparecen en las tarjetas de cada Pokemón.
   const stringPokeName = stringOfName('type', typeDroplist);
   const stringPokeType = stringOfType('type', typeDroplist);
   const stringPokeHeight = stringOfHeight('type', typeDroplist);
@@ -37,7 +37,7 @@ selectFilterByType.addEventListener('change', () => {
   // Imprime por separado las cartas
   for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
     const card = document.createElement('div');
-    card.classList.add('card-style');
+    card.classList.add('card-style');  
     card.innerHTML = `<img src=' ${stringPokeImg[i]}'>
                       <h3>${stringPokeName[i]}</h3>
                       <p><span class='modal-p'>TIPO: </span>${stringPokeType[i]}</p>
